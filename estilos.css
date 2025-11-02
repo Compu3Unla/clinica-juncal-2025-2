@@ -1,13 +1,22 @@
 @charset "UTF-8";
+
 body {
     background-color: #f1f1f1;
+    max-height: 100vh;
 }
 
 /* aplicaciones de fuentes */
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 h2 {
@@ -53,10 +62,10 @@ p {
 /* turno online boton */
 
 .turno-online {
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-margin: 20px 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 16px 16px 0 0;
 }
 
 .turno-online p {
@@ -77,15 +86,135 @@ margin: 20px 100px 0 0;
 
 /* header */
 
+#header-turnos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 nav {
+    width: 100%;
+    padding-right: 80px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 100px;
-    margin: 40px 100px 0px 0;
+    margin: 16px 100px 0px 0;
+    background-color: #319F5A;
 }
 
+/* main */
+
+#hero {
+    width: 100%;
+    margin: 16px auto;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#hero ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation: slide 21s infinite ease-in-out;
+}
+
+#hero li {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    23% {
+        transform: translateX(0%);
+    }
+
+    33% {
+        transform: translateX(-100%);
+    }
+
+    56% {
+        transform: translateX(-100%);
+    }
+
+    66% {
+        transform: translateX(-200%);
+    }
+
+    90% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.texto-hero {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 65px 51px;
+    box-sizing: border-box; 
+
+     background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.4) 40%,
+        rgba(0, 0, 0, 0) 80%)
+    }
+
+
+.texto-hero h2, .texto-hero p {
+    color: white;
+}
+
+#especialidades-medicas {
+    display: flex;
+}
+
+#texto-expecialidades {
+    background: rgba(59, 44, 22, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+
+}
+
+
 /* footer */
+
+footer {
+    background-color: #40A365;
+    display: flex;
+}
 
 footer p {
     font-weight: 400;
