@@ -10,93 +10,120 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <img id="sanatorio-juncal-logo" src="svg/logo-sanatorio-juncal.svg" alt="Sanatorio Juncal Logotipo"
-                width="356" height="95">
-        </a>
-        <div class="turno-online">
-            <h5>SOLICITAR TURNOS ONLINE</h5>
-            <p>TURNOS 4239-8008 - CONMUTADOR 4239-8000 </p>
-        </div>
+        <section id="header-turnos">
+            <a href="index.html">
+                <img id="sanatorio-juncal-logo" src="svg/logo-sanatorio-juncal.svg" alt="Sanatorio Juncal Logotipo"
+                    width="356" height="95">
+            </a>
+            <article class="turno-online">
+                <h5>SOLICITAR TURNOS ONLINE</h5>
+                <p>TURNOS 4239-8008 - CONMUTADOR 4239-8000 </p>
+            </article>
+        </section>
         <nav>
-            <a href="">Institucional</a>
-            <a href="">Pacientes</a>
-            <a href="">Solicitudes</a>
-            <a href="">Contacto</a>
+            <a href="institucional.html">Institucional</a>
+            <a href="#">Pacientes</a>
+            <a href="#">Solicitudes</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
     </header>
+
     <main>
         <section id="hero">
-            <article>
-                <a href="#">
-                    <img src="img/juncal-hero-1.jpg" width="1950" height="950"
-                        alt="cartilla profesionales solicitar turno">
-                    <h2>Conocé nuestra cartilla de profesionales</h2>
-                    <p>y solicitá tu turno</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/juncal-hero-2.jpg" width="1950" height="950" alt="ubicación Sanatorio Juncal">
-                    <h2>Conocé donde estamos ubicados</h2>
-                    <p>y cómo llegar</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/juncal-hero-3.jpg" width="1950" height="950" alt="instalaciones y servicios">
-                    <h2>Conocé nuestras instalaciones</h2>
-                    <p>y nuestros servicios</p>
-                </a>
-            </article>
-
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/juncal-hero-1.jpg" width="1028" height="508"
+                            alt="cartilla profesionales solicitar turno">
+                        <section class="texto-hero">
+                            <h2>Conocé nuestra cartilla de profesionales</h2>
+                            <p>y solicitá tu turno</p>
+                        </section>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/juncal-hero-2.jpg" width="1028" height="508" alt="ubicación Sanatorio Juncal">
+                        <section class="texto-hero">
+                            <h2>Conocé donde estamos ubicados</h2>
+                            <p>y cómo llegar</p>
+                        </section>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/juncal-hero-3.jpg" width="1028" height="508" alt="instalaciones y servicios">
+                        <section class="texto-hero">
+                            <h2>Conocé nuestras instalaciones</h2>
+                            <p>y nuestros servicios</p>
+                        </section>
+                    </a>
+                </li>
+            </ul>
         </section>
 
-        <section id="especiaidades-medicas">
-            <h1>ESPECIALIDADES MÉDICAS</h1>
+        <h1>ESPECIALIDADES MÉDICAS</h1>
+            <section id="especialidades-medicas">
+                <article class="cardiologia-pediatrica">
+                    <img src="img/cardiologia-pediatrica-img.jpg" alt="Foto Cardiologia Pediatrica" width="470"
+                        height="700">
+                    <div id="texto-especialidades">
+                        <h2>Cardiologia Pediatrica</h2>
+                    <p>Hoy en día es posible corregir la mayoría de las cardiopatías congénitas durante los primeros
+                        meses
+                        de vida, lo que permite que...</p>
+                    </div>
+                </article>
 
-            <article class="cardiologia-pediatrica">
-                <img src="img/cardiologia-pediatrica-img.jpg" alt="Foto Cardiologia Pediatrica" width="470"
-                    height="700">
-                <h2>Cardiologia Pediatrica</h2>
-                <p>Hoy en día es posible corregir la mayoría de las cardiopatías congénitas durante los primeros meses
-                    de vida, lo que permite que...</p>
-            </article>
+                <article class="radiologia">
+                    <img src="img/radiologia-img.jpg" alt="Foto Radiologia" width="470" height="700">
+                     <div id="texto-especialidades">
+                    <h2>Radiologia</h2>
+                    <p>El Servicio de Radiología brinda soporte a casi todas las áreas médicas de la institución, con
+                        especial énfasis... </p>
+                        </div>
+                </article>
 
-            <article class="radiologia">
-                <img src="img/radiologia-img.jpg" alt="Foto Radiologia" width="470" height="700">
-                <h2>Radiologia</h2>
-                <p>El Servicio de Radiología brinda soporte a casi todas las áreas médicas de la institución, con
-                    especial énfasis... </p>
-            </article>
-
-            <article class="neurologia">
-                <img src="img/neurologia-img.jpg" alt="foto de neurologia" width="470" height="700">
-                <h2>Neurologia</h2>
-                <p>El Servicio de Neurología está conformado por neurólogos de amplia trayectoria y reconocida
-                    experiencia, dedicados al... </p>
-            </article>
+                <article class="neurologia">
+                    <img src="img/neurologia-img.jpg" alt="foto de neurologia" width="470" height="700">
+                    <div id="texto-especialidades">
+                    <h2>Neurologia</h2>
+                    <p>El Servicio de Neurología está conformado por neurólogos de amplia trayectoria y reconocida
+                        experiencia, dedicados al... </p>
+                    </div>
+                </article>
 
                 <article class="cardiologia">
-                        <img src="img/cardiologia-img.jpg" alt="Foto Cardiologia" width="470" height="700">
-                        <h2>Cardiologia</h2>
-                        <p>El Servicio de Cardiología está especializado en la prevención, diagnóstico y tratamiento de las enfermedades cardiovasculares en adultos...</p>
-                </article>
+                    <img src="img/cardiologia-img.jpg" alt="Foto Cardiologia" width="470" height="700">
+                    <div id="texto-especialidades">
+                    <h2>Cardiologia</h2>
+                    <p>El Servicio de Cardiología está especializado en la prevención, diagnóstico y tratamiento de las
+                        enfermedades cardiovasculares en adultos...</p>
+                        </div>
+                    </article>
             </section>
-            <section id="noticias">
-                <img src="img/noticias-endoscopia.jpg" alt="Foto de endoscopio" width="710" height="475">
-                <article class="texto-noticias">
-                    <h3>Noticias</h3>
-                    <p>En Sanatorio Juncal incorporamos nuevos equipos de video-endoscopia de última generación, con magnificación x100 en alta definición (HD) y tecnología FICE.
-                    Estos avances permiten la detección temprana de  lesiones antes de que se vuelvan cancerígenas, ofreciendo estudios de la más alta calidad médico-técnica.
-                    Además, los procedimientos se realizan en un quirófano de última generación, especialmente diseñado para este tipo de estudios, junto a salas de recuperación privadas que garantizan el máximo confort para los pacientes.</p>
-                </article>
-            </section>
+        </section>
+
+        <section id="noticias">
+            <img src="img/noticias-endoscopia.jpg" alt="Foto de endoscopio" width="710" height="475">
+            <article class="texto-noticias">
+                <h3>Noticias</h3>
+                <p>En Sanatorio Juncal incorporamos nuevos equipos de video-endoscopia de última generación, con
+                    magnificación x100 en alta definición (HD) y tecnología FICE.
+                    Estos avances permiten la detección temprana de lesiones antes de que se vuelvan cancerígenas,
+                    ofreciendo estudios de la más alta calidad médico-técnica.
+                    Además, los procedimientos se realizan en un quirófano de última generación, especialmente diseñado
+                    para este tipo de estudios, junto a salas de recuperación privadas que garantizan el máximo confort
+                    para los pacientes.</p>
+            </article>
+        </section>
     </main>
 
     <footer>
@@ -162,9 +189,9 @@
                     alt="foto de youtube"></a>
         </div>
         <div class="contactos">
-                <h6>Contactos</h6>
-                <p>telefono y horarios</p>
-                <p>Lunes a Viernes - 08:00hs a 19:00hs</p>
-                <p>WhatsApp - 11234353 / 4239-8000</p>
+            <h6>Contactos</h6>
+            <p>telefono y horarios</p>
+            <p>Lunes a Viernes - 08:00hs a 19:00hs</p>
+            <p>WhatsApp - 11234353 / 4239-8000</p>
         </div>
     </footer>
