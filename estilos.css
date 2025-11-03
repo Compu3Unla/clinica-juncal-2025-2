@@ -100,8 +100,9 @@ nav {
     justify-content: flex-end;
     align-items: center;
     gap: 100px;
-    margin: 16px 100px 0px 0;
+    margin: 15px 0px 0px 0px;
     background-color: #319F5A;
+    padding: 15px 30px 15px 0px
 }
 
 /* main */
@@ -214,12 +215,51 @@ nav {
 footer {
     background-color: #40A365;
     display: flex;
+    padding: 40px;
+    justify-content: space-between;
 }
 
 footer p {
     font-weight: 400;
     color: #ffffff;
     font-size: 0.9rem;
+}
+
+.institucional ul, .pacientes ul, .solicitudes ul {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    list-style-type: none
+}
+
+.institucional,.pacientes,.solicitudes {
+    border-right: solid 3px #ffffff;
+    padding: 0px 30px 0px 0px;
+}
+
+.contactos {
+    display: flex  ;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 24px;
+}
+
+.redes-contacto {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu-footer {
+    display:flex;
+    flex-direction: row;
+    gap: 75px;
 }
 
 
@@ -480,9 +520,9 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 570px;
-    height: 220px;
-    border: solid 2px #134661;
+    width: 650px;
+    height: 290px;
+    border: solid 5px #134661;
     border-radius: 85px;
     padding: 40px;
 }
