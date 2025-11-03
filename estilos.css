@@ -191,8 +191,23 @@ nav {
 
 #especialidades-medicas {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 24px;
+    padding: 25px;
+}
+
+#especialidades-medicas h1 {
+    font-size: 42px;
+    color: #134661;
+    margin: 0;
+    font-weight: 700;
+    padding: 0px 0px 0px 60px;
+}
+
+.especialidades {
+    display: flex;
     margin: 10px;
+    justify-content: space-evenly;
 }
 
 #especialidades-medicas article a {
@@ -817,4 +832,51 @@ main.horarios {
     color: #134661;
     margin: 0;
     font-weight: 700;
+}
+
+
+/* Noticias Index*/
+
+.texto-noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 1030px;
+}
+
+.texto-noticias p {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 400;
+}
+
+.texto-noticias h3 {
+    font-size: 42px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;    
+}
+
+.texto-noticias h6 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;    
+}
+
+#noticias {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    background-color: #76A9D7;
+    height: 550px;
+    align-items: center;
+    padding: 40px;
+    margin: 30px 0px 0px 0px;
+    justify-content: space-evenly;
+}
+
+#noticias img {
+    border-radius: 60px;
 }
