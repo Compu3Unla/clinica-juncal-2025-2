@@ -81,14 +81,809 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 100px;
-    margin: 40px 100px 0px 0;
+    margin: 15px 0px 0px 0px;
+    background-color: #319F5A;
+    padding: 15px 30px 15px 0px
 }
 
-/* footer */
+.nav-list {
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
+}
+
+/*main*/
+
+#hero {
+    width: 100%;
+    margin: 16px auto;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#hero ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation: slide 21s infinite ease-in-out;
+}
+
+#hero li {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    23% {
+        transform: translateX(0%);
+    }
+
+    33% {
+        transform: translateX(-100%);
+    }
+
+    56% {
+        transform: translateX(-100%);
+    }
+
+    66% {
+        transform: translateX(-200%);
+    }
+
+    90% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.texto-hero {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 65px 51px;
+    box-sizing: border-box;
+
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.4) 40%,
+            rgba(0, 0, 0, 0) 80%)
+}
+
+
+.texto-hero h2,
+.texto-hero p {
+    color: white;
+}
+
+#especialidades-medicas {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+#especialidades-medicas article a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#especialidades-medicas article img {
+    width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+#texto-especialidades h2 {
+    color: #EAD7FB;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#texto-especialidades p {
+    color: #EAD7FB;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#texto-especialidades {
+    background-color: #319F5A;
+    width: 371px;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+#especialidades-medicas a:hover #texto-especialidades {
+    opacity: 1;
+}
+
+#especialidades-medicas a:hover>* {
+    transform: translateY(0px);
+}
+
+/*footer*/
+footer {
+    background-color: #40A365;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
 
 footer p {
     font-weight: 400;
     color: #ffffff;
     font-size: 0.9rem;
+}
+
+.institucional ul,
+.pacientes ul,
+.solicitudes ul {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    list-style-type: none
+}
+
+.institucional,
+.pacientes,
+.solicitudes {
+    border-right: solid 3px #ffffff;
+    padding: 0px 30px 0px 0px;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 24px;
+}
+
+.redes-contacto {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+}
+
+/*formulario de contacto*/
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+.contact-form h2 {
+    color: #1a3b4c;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.contact-form-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contact-form-checkbox {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    white-space: nowrap;
+    margin-left: 2px;
+}
+
+.contact-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.contact-form .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form .reset {
+    background-color: #e0e0e0;
+    color: #555;
+}
+
+.contact-form .reset:hover {
+    background-color: #d5d5d5;
+}
+
+.contact-form .submit {
+    background-color: #4caf50;
+    color: white;
+}
+
+.contact-form .submit:hover {
+    background-color: #43a047;
+}
+
+/*ubicacion*/
+.ubicacion-sanatorio {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.titulo-azul {
+    color: #1a3b4c;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.boton-ver-sede {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.boton-ver-sede .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-ver-sede .reset:hover {
+    background-color: #d5d5d5;
+}
+
+.boton-ver-sede .submit {
+    background-color: #1a3b4c;
+    color: white;
+}
+
+.boton-ver-sede .submit:hover {
+    background-color: #1a3b4c;
+}
+
+/*horarios*/
+main.horarios {
+    font-family: inter;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.horarios-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-horarios {
+    color: #1a3b4c;
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.horarios-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.columna {
+    flex: 1;
+    min-width: 230px;
+}
+
+.subtitulo {
+    color: #1a3b4c;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.categoria {
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+/* responsive blocks */
+
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 500px) {
+
+    /*header*/
+    .turno-online {
+    display: none;
+    }
+
+    #header-turnos img {
+    margin: 20px 0 0 20px;
+    width: 90%;
+    }
+
+    .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    }
+
+    .abrir-menu {
+        display: block;
+        background-color: #f5f5f5;
+        color: #319F5A;
+        border: none;
+        padding: 10px 15px;
+        margin: 20px 20px 0 0;
+        font-size: 32px;
+    }
+
+    .cerrar-menu {
+        display: block;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 32px;
+        margin: 0 0 30px 0;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        width: 60%;
+        margin: 0 0 0 0;
+        top: 0;
+        right: 0;
+        border-radius: 20px;
+        gap: 1rem;
+        padding: 2rem;
+        background-color: #319F5A;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        gap: 3rem;
+    }
+
+    .nav-list a {
+    width: 100%;
+    text-align: right;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    }
+
+    .nav-list a:last-child {
+    border-bottom: none;
+    }
+
+
+    .contact-form-container {
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .contact-form__buttons {
+        flex-direction: column;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+    }
+
+    .ubicacion-sanatorio {
+        padding: 10px;
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .horarios-columns {
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CCS institucional Facu */
+
+.texto-gestion-calidad {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.texto-gestion p {
+    font-size: 30px;
+    margin: 12px;
+    font-weight: 400;
+}
+
+.texto-gestion img {
+    border-radius: 10%;
+}
+
+.texto-gestion {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+#gestion-de-calidad h3 {
+    font-size: 42px;
+    color: #134661;
+    margin: 0;
+    font-weight: 700;
+}
+
+#gestion-de-calidad {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    margin: 60px;
+}
+
+.mision p,
+.vision p {
+    font-size: 22px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+.mision h4,
+.vision h4 {
+    font-size: 28px;
+    color: #76A9D7;
+    margin: 0;
+    font-weight: 700;
+}
+
+.mision,
+.vision {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 650px;
+    height: 290px;
+    border: solid 5px #134661;
+    border-radius: 85px;
+    padding: 40px;
+}
+
+#mision-vision {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.icono-residencias,
+.icono-turno,
+.icono-cardiovascular,
+.icono-clinico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#iconos p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+#iconos {
+    display: flex;
+    flex-direction: row;
+    background-color: #76A9D7;
+    justify-content: center;
+    gap: 45px;
+    padding: 50px;
+}
+
+#galeria h3 {
+    font-size: 42px;
+    color: #134661;
+    margin: 0;
+    font-weight: 700;
 }
