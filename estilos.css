@@ -491,11 +491,6 @@ main.horarios {
 
 /* responsive blocks */
 
-.abrir-menu, .cerrar-menu {
-    display: none;
-}
-
-
 /*RESPONSIVE*/
 @media (max-width: 500px) {
 
