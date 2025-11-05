@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <script>
         function cambiarDisplay(visibilidadNueva) {
-            document.getElementById("galeria").style.display = visibilidadNueva
+            document.getElementById("galeria-ampliada").style.display = visibilidadNueva
         }
         function mostrarGaleria() {
             cambiarDisplay('flex')
@@ -25,7 +25,8 @@
     <header>
         <section id="header-turnos">
             <a href="index.html">
-                <img id="sanatorio-juncal-logo" src="svg/logo-sanatorio-juncal.svg" alt="Sanatorio Juncal Logotipo" width="356" height="95"></a>
+                <img id="sanatorio-juncal-logo" src="svg/logo-sanatorio-juncal.svg" alt="Sanatorio Juncal Logotipo"
+                    width="356" height="95"></a>
             <article class="turno-online">
                 <h5>SOLICITAR TURNOS ONLINE</h5>
                 <p>TURNOS 4239-8008 - CONMUTADOR 4239-8000 </p>
@@ -93,99 +94,128 @@
             </div>
         </section>
 
+        <!--Aca va la galeria-->
         <section id="galeria">
-            <!--Aca va la galeria-->
-            <h3>Galeria</h3>
-            <section id="miniaturas">
-                <a href="#juncal-exterior-1"><img src="img/juncal-exterior-1.jpg" width="300px" height="180px"
-                        alt="" onClick="mostrarGaleria()"></a>
-                <a href="#juncal-exterior-2"><img src="img/juncal-exterior-2.jpg" width="300px" height="180px"
-                        alt="" onClick="mostrarGaleria()"></a>
-                <a href="#juncal-exterior-3"><img src="img/juncal-exterior-3.jpg" width="300px" height="180px"
-                        alt="" onClick="mostrarGaleria()"></a>
-                <a href="#juncal-exterior-4"><img src="img/juncal-exterior-6.jpg" width="300px" height="180px"
-                        alt="" onClick="mostrarGaleria()"></a>
-                <a href="#juncal-exterior-5"><img src="img/juncal-exterior-7.jpg" width="300px" height="180px"
-                        alt="" onClick="mostrarGaleria()"></a>
-                <a href="#juncal-exterior-6"><img src="img/juncal-exterior-8.jpg" width="300px" height="180px"
-                        alt="" onClick="mostrarGaleria()"></a>
-            </section>
-            <section id="galeria">
+            <h3>GALERÍA</h3>
+            <article id="miniaturas">
+                <div id="miniatura-1">
+                    <a href="#foto-1"><img src="img/galeria/galeria-1.jpg" width="300px" height="180px" alt="Gorrión"
+                            onClick="mostrarGaleria()"></a>
+                    <a href="#foto-2"><img src="img/galeria/galeria-2.jpg" width="300px" height="180px" alt="Lechuza"
+                            onClick="mostrarGaleria()"></a>
+                    <a href="#foto-3"><img src="img/galeria/galeria-3.jpg" width="300px" height="180px" alt="Teyú"
+                            onClick="mostrarGaleria()"></a>
+                    <a href="#foto-4"><img src="img/galeria/galeria-4.jpg" width="300px" height="180px" alt="Teyú"
+                            onClick="mostrarGaleria()"></a>
+                </div>
+                <div id="miniatura-2">
+                    <a href="#foto-5"><img src="img/galeria/galeria-5.jpg" width="300px" height="180px" alt="Teyú"
+                            onClick="mostrarGaleria()"></a>
+                    <a href="#foto-6"><img src="img/galeria/galeria-6.jpg" width="300px" height="180px" alt="Teyú"
+                            onClick="mostrarGaleria()"></a>
+                    <a href="#foto-7"><img src="img/galeria/galeria-7.jpg" width="300px" height="180px" alt="Teyú"
+                            onClick="mostrarGaleria()"></a>
+                    <a href="#foto-8"><img src="img/galeria/galeria-8.jpg" width="300px" height="180px" alt="Teyú"
+                            onClick="mostrarGaleria()"></a>
+                </div>
+            </article>
+
+            <article id="galeria-ampliada">
                 <ul id="galeria-oculta">
-                    <li class="fraccion-galeria" id="galeria-1">
-                        <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-izquierdo.svg" width="50px"
-                                height="50px" alt="Anterior"></a>
-                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                    <li class="fraccion-galeria" id="foto-1">
+                        <a href="#" class="primer-ultima-flecha">
+                            <img src="svg/galeria/back.svg" width="50px" height="50px" alt="Anterior">
+                        </a>
+                        <img class="close" src="svg/galeria/close.svg" alt="Cerrar" width="50px" height="50px"
                             onClick="ocultarGaleria()">
-                        <a href="galeria-2"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
-                                alt="Siguiente"></a>
-                    </li>
-                    <li class="fraccion-galeria" id="galeria-2">
-                        <a href="galeria-1"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
-                                alt="Anterior"></a>
-                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
-                            onClick="ocultarGaleria()">
-                        <a href="galeria-3"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
-                                alt="Siguiente"></a>
+                        <a href="#foto-2">
+                            <img src="svg/galeria/next.svg" width="50px" height="50px" alt="Siguiente">
+                        </a>
                     </li>
 
-                    <li class="fraccion-galeria" id="galeria-3">
-                        <a href="galeria-2"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
-                                alt="Anterior"></a>
-                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                    <li class="fraccion-galeria" id="foto-2">
+                        <a href="#foto-1">
+                            <img src="svg/galeria/back.svg" width="50px" height="50px" alt="Anterior">
+                        </a>
+                        <img class="close" src="svg/galeria/close.svg" alt="Cerrar" width="50px" height="50px"
                             onClick="ocultarGaleria()">
-                        <a href="galeria-4"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
-                                alt="Siguiente"></a>
+                        <a href="#foto-3">
+                            <img src="svg/galeria/next.svg" width="50px" height="50px" alt="Siguiente">
+                        </a>
                     </li>
 
-                      <li class="fraccion-galeria" id="galeria-4">
-                        <a href="galeria-3"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
-                                alt="Anterior"></a>
-                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                    <li class="fraccion-galeria" id="foto-3">
+                        <a href="#foto-2">
+                            <img src="svg/galeria/back.svg" width="50px" height="50px" alt="Anterior">
+                        </a>
+                        <img class="close" src="svg/galeria/close.svg" alt="Cerrar" width="50px" height="50px"
                             onClick="ocultarGaleria()">
-                        <a href="galeria-5"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
-                                alt="Siguiente"></a>
+                        <a href="#foto-4">
+                            <img src="svg/galeria/next.svg" width="50px" height="50px" alt="Siguiente">
+                        </a>
                     </li>
 
-                      <li class="fraccion-galeria" id="galeria-5">
-                        <a href="galeria-4"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
-                                alt="Anterior"></a>
-                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                    <li class="fraccion-galeria" id="foto-4">
+                        <a href="#foto-3">
+                            <img src="svg/galeria/back.svg" width="50px" height="50px" alt="Anterior">
+                        </a>
+                        <img class="close" src="svg/galeria/close.svg" alt="Cerrar" width="50px" height="50px"
                             onClick="ocultarGaleria()">
-                        <a href="galeria-6"><img src="svg/angulo-derecho.svg" width="50px" height="50px"
-                                alt="Siguiente"></a>
+                        <a href="#foto-5">
+                            <img src="svg/galeria/next.svg" width="50px" height="50px" alt="Siguiente">
+                        </a>
                     </li>
 
-                    <li class="fraccion-galeria" id="galeria-6">
-                        <a href="galeria-5"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
-                                alt="Anterior"></a>
-                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+                    <li class="fraccion-galeria" id="foto-5">
+                        <a href="#foto-4">
+                            <img src="svg/galeria/back.svg" width="50px" height="50px" alt="Anterior">
+                        </a>
+                        <img class="close" src="svg/galeria/close.svg" alt="Cerrar" width="50px" height="50px"
                             onClick="ocultarGaleria()">
-                        <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-derecho.svg" width="50px"
-                                height="50px" alt="Siguiente"></a>
+                        <a href="#foto-6">
+                            <img src="svg/galeria/next.svg" width="50px" height="50px" alt="Siguiente">
+                        </a>
                     </li>
-                    <li class="fraccion-galeria" id="galeria-7">
-                        <a href="galeria-6"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
-                                alt="Anterior"></a>
-                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+
+                    <li class="fraccion-galeria" id="foto-6">
+                        <a href="#foto-5">
+                            <img src="svg/galeria/back.svg" width="50px" height="50px" alt="Anterior">
+                        </a>
+                        <img class="close" src="svg/galeria/close.svg" alt="Cerrar" width="50px" height="50px"
                             onClick="ocultarGaleria()">
-                        <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-derecho.svg" width="50px"
-                                height="50px" alt="Siguiente"></a>
+                        <a href="#foto-7">
+                            <img src="svg/galeria/next.svg" width="50px" height="50px" alt="Siguiente">
+                        </a>
                     </li>
-                    <li class="fraccion-galeria" id="galeria-8">
-                        <a href="galeria-7"><img src="svg/angulo-izquierdo.svg" width="50px" height="50px"
-                                alt="Anterior"></a>
-                        <img class="close" src="svg/cruz.svg" alt="Cerrar" width="50px" height="50px"
+
+                    <li class="fraccion-galeria" id="foto-7">
+                        <a href="#foto-6">
+                            <img src="svg/galeria/back.svg" width="50px" height="50px" alt="Anterior">
+                        </a>
+                        <img class="close" src="svg/galeria/close.svg" alt="Cerrar" width="50px" height="50px"
                             onClick="ocultarGaleria()">
-                        <a href="#" class="primer-ultima-flecha"><img src="svg/angulo-derecho.svg" width="50px"
-                                height="50px" alt="Siguiente"></a>
+                        <a href="#foto-8">
+                            <img src="svg/galeria/next.svg" width="50px" height="50px" alt="Siguiente">
+                        </a>
+                    </li>
+                    <li class="fraccion-galeria" id="foto-8">
+                        <a href="#foto-7">
+                            <img src="svg/galeria/back.svg" width="50px" height="50px" alt="Anterior">
+                        </a>
+                        <img class="close" src="svg/galeria/close.svg" alt="Cerrar" width="50px" height="50px"
+                            onClick="ocultarGaleria()">
+                        <a href="#" class="primer-ultima-flecha">
+                            <img src="svg/galeria/next.svg" width="50px" height="50px" alt="Siguiente">
+                        </a>
                     </li>
                 </ul>
-            </section>
-
-
+            </article>
 
         </section>
+
+
+
+
     </main>
 
     <footer>
