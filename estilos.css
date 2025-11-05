@@ -33,27 +33,27 @@ h3 {
 h5 {
     font-weight: 800;
     color: #ffffff;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 h6 {
     font-weight: 700;
     color: #ffffff;
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
 }
 
 a {
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 p {
     font-weight: 600;
     color: #000000;
     line-height: 1.6;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 
 #texto-noticias p {
@@ -490,6 +490,115 @@ main.horarios {
 }
 
 /* responsive blocks */
+
+/* galeria */
+#galeria {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	height: 100vh;
+	background-color: #000000;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+#galeria-oculta {
+	display: flex;
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.fraccion-galeria {
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1450px;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.primer-ultima-flecha {
+	visibility: hidden;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 2%;
+}
+
+#miniaturas-proyectos {
+    display: flex;
+    gap: 10px;
+    margin: 9px;
+    padding: 15px;
+    min-width: 50vh;
+}
+
+#miniaturas-proyectos article {
+    display: flex;
+    gap: 12px;
+} 
+
+#miniaturas {
+    /* width: 100%; */
+    display: flex;
+    gap: 10px;
+    margin: 9px;
+    max-width: 99vh;
+    padding: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#miniaturas a {
+    width: 300px;
+    height: auto;
+}
+
+
+
+.boton-volver {
+    color: #a828b1;
+    background-color: #fcb64d;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+
+/*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
+
+#juncal-exterior-1 {
+	background-image: url("images/");
+}
+
+#juncal-exterior-2 {
+	background-image: url("images/")
+}
+
+#juncal-exterior-3 {
+	background-image:url("images/");
+}
+
+#juncal-exterior-4 {
+	background-image:url("images/");
+}
+
+#juncal-exterior-5 {
+	background-image: url("images/");
+}
+
+#juncal-exterior-6 {
+	background-image: url("images/")
+}
 
 /*RESPONSIVE*/
 @media (max-width: 500px) {
