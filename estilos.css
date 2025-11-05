@@ -93,7 +93,7 @@ p {
     justify-content: space-between;
 }
 
-#header-turnos img {
+#header-turnos img/galeria/ {
     margin: 30px 0px 0px 30px;
 }
 
@@ -138,7 +138,7 @@ nav {
     flex-shrink: 0;
 }
 
-#hero img {
+#hero img/galeria/ {
     width: 100%;
     height: auto;
     display: block;
@@ -227,7 +227,7 @@ nav {
     justify-content: center;
 }
 
-#especialidades-medicas article img {
+#especialidades-medicas article img/galeria/ {
     width: 400px;
     height: auto;
     display: block;
@@ -284,7 +284,7 @@ footer p {
 }
 
 footer h6 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
 .institucional ul,
@@ -514,18 +514,34 @@ main.horarios {
     margin-bottom: 0.3rem;
 }
 
-/* responsive blocks */
-
 /* galeria */
+
 #galeria {
-    display: none;
-    width: 100%;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    margin: 60px;
+}
+
+#miniaturas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #000000;
-    position: absolute;
+}
+
+#galeria-ampliada {
+    display: none;
+     position: fixed;
     top: 0;
-    z-index: 10;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
 }
 
 #galeria-oculta {
@@ -558,71 +574,38 @@ main.horarios {
     right: 2%;
 }
 
-#miniaturas-proyectos {
-    display: flex;
-    gap: 10px;
-    margin: 9px;
-    padding: 15px;
-    min-width: 50vh;
-}
-
-#miniaturas-proyectos article {
-    display: flex;
-    gap: 12px;
-}
-
-#miniaturas {
-    /* width: 100%; */
-    display: flex;
-    gap: 10px;
-    margin: 9px;
-    max-width: 99vh;
-    padding: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#miniaturas a {
-    width: 300px;
-    height: auto;
-}
-
-
-
-.boton-volver {
-    color: #a828b1;
-    background-color: #fcb64d;
-    border-radius: 25px;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-weight: 800;
-}
-
-
 /*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
 
-#juncal-exterior-1 {
-    background-image: url("img/juncal-exterior-1.jpg");
+#foto-1 {
+    background-image: url("img/galeria/galeria-1.jpg");
 }
 
-#juncal-exterior-2 {
-    background-image: url("img/juncal-exterior-2.jpg")
+#foto-2 {
+    background-image: url("img/galeria/galeria-2.jpg")
 }
 
-#juncal-exterior-3 {
-    background-image: url("img/juncal-exterior-3.jpg");
+#foto-3 {
+    background-image: url("img/galeria/galeria-3.jpg");
 }
 
-#juncal-exterior-4 {
-    background-image: url("img/juncal-exterior-6.jpg");
+#foto-4 {
+    background-image: url("img/galeria/galeria-4.jpg");
 }
 
-#juncal-exterior-5 {
-    background-image: url("img/juncal-exterior-7.jpg");
+#foto-5 {
+    background-image: url("img/galeria/galeria-5.jpg")
 }
 
-#juncal-exterior-6 {
-    background-image: url("img/juncal-exterior-8.jpg")
+#foto-6 {
+    background-image: url("img/galeria/galeria-6.jpg");
+}
+
+#foto-7 {
+    background-image: url("img/galeria/galeria-7.jpg");
+}
+
+#foto-8 {
+    background-image: url("img/galeria/galeria-8.jpg")
 }
 
 /*RESPONSIVE*/
@@ -633,7 +616,7 @@ main.horarios {
         display: none;
     }
 
-    #header-turnos img {
+    #header-turnos img/galeria/ {
         margin: 20px 0 0 20px;
         width: 90%;
     }
@@ -946,7 +929,7 @@ main.horarios {
     font-weight: 400;
 }
 
-.texto-gestion img {
+.texto-gestion img/galeria/ {
     border-radius: 10%;
 }
 
@@ -1056,14 +1039,14 @@ main.horarios {
     font-size: 42px;
     color: #ffffff;
     margin: 0;
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 .texto-noticias h6 {
     font-size: 18px;
     color: #ffffff;
     margin: 0;
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 #noticias {
@@ -1078,6 +1061,6 @@ main.horarios {
     justify-content: space-evenly;
 }
 
-#noticias img {
+#noticias img/galeria/ {
     border-radius: 60px;
 }
