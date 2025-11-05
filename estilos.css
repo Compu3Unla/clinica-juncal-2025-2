@@ -491,10 +491,6 @@ main.horarios {
 
 /* responsive blocks */
 
-.abrir-menu, .cerrar-menu {
-    display: none;
-}
-
 /* galeria */
 #galeria {
 	display: none;
