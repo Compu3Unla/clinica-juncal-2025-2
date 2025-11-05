@@ -100,10 +100,15 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 100px;
     margin: 15px 0px 0px 0px;
     background-color: #319F5A;
     padding: 15px 30px 15px 0px
+}
+
+.nav-list {
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
 }
 
 /*main*/
@@ -484,6 +489,12 @@ main.horarios {
     margin-bottom: 0.3rem;
 }
 
+/* responsive blocks */
+
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
 /* galeria */
 #galeria {
 	display: none;
@@ -594,7 +605,79 @@ main.horarios {
 }
 
 /*RESPONSIVE*/
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+
+    /*header*/
+    .turno-online {
+    display: none;
+    }
+
+    #header-turnos img {
+    margin: 20px 0 0 20px;
+    width: 90%;
+    }
+
+    .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    }
+
+    .abrir-menu {
+        display: block;
+        background-color: #f5f5f5;
+        color: #319F5A;
+        border: none;
+        padding: 10px 15px;
+        margin: 20px 20px 0 0;
+        font-size: 32px;
+    }
+
+    .cerrar-menu {
+        display: block;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 32px;
+        margin: 0 0 30px 0;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        width: 60%;
+        margin: 0 0 0 0;
+        top: 0;
+        right: 0;
+        border-radius: 20px;
+        gap: 1rem;
+        padding: 2rem;
+        background-color: #319F5A;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        gap: 3rem;
+    }
+
+    .nav-list a {
+    width: 100%;
+    text-align: right;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    }
+
+    .nav-list a:last-child {
+    border-bottom: none;
+    }
+
+
     .contact-form-container {
         padding: 20px;
     }
@@ -610,6 +693,11 @@ main.horarios {
 
     .contact-form .btn {
         width: 100%;
+    }
+
+    .ubicacion-sanatorio {
+        padding: 10px;
+        margin: 10px;
     }
 
 }
