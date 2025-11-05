@@ -33,27 +33,27 @@ h3 {
 h5 {
     font-weight: 800;
     color: #ffffff;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 h6 {
     font-weight: 700;
     color: #ffffff;
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
 }
 
 a {
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 p {
     font-weight: 600;
     color: #000000;
     line-height: 1.6;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 
 #texto-noticias p {
@@ -100,10 +100,15 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 100px;
     margin: 15px 0px 0px 0px;
     background-color: #319F5A;
     padding: 15px 30px 15px 0px
+}
+
+.nav-list {
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
 }
 
 /*main*/
@@ -191,23 +196,8 @@ nav {
 
 #especialidades-medicas {
     display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 25px;
-}
-
-#especialidades-medicas h1 {
-    font-size: 42px;
-    color: #134661;
-    margin: 0;
-    font-weight: 700;
-    padding: 0px 0px 0px 60px;
-}
-
-.especialidades {
-    display: flex;
+    gap: 10px;
     margin: 10px;
-    justify-content: space-evenly;
 }
 
 #especialidades-medicas article a {
@@ -499,9 +489,191 @@ main.horarios {
     margin-bottom: 0.3rem;
 }
 
+/* responsive blocks */
+
+/* galeria */
+#galeria {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+#galeria-oculta {
+    display: flex;
+    width: 100%;
+    max-width: 1450px;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.fraccion-galeria {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    min-width: 1450px;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.primer-ultima-flecha {
+    visibility: hidden;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 2%;
+}
+
+#miniaturas-proyectos {
+    display: flex;
+    gap: 10px;
+    margin: 9px;
+    padding: 15px;
+    min-width: 50vh;
+}
+
+#miniaturas-proyectos article {
+    display: flex;
+    gap: 12px;
+}
+
+#miniaturas {
+    /* width: 100%; */
+    display: flex;
+    gap: 10px;
+    margin: 9px;
+    max-width: 99vh;
+    padding: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#miniaturas a {
+    width: 300px;
+    height: auto;
+}
+
+
+
+.boton-volver {
+    color: #a828b1;
+    background-color: #fcb64d;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+
+/*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
+
+#juncal-exterior-1 {
+    background-image: url("images/");
+}
+
+#juncal-exterior-2 {
+    background-image: url("images/")
+}
+
+#juncal-exterior-3 {
+    background-image: url("images/");
+}
+
+#juncal-exterior-4 {
+    background-image: url("images/");
+}
+
+#juncal-exterior-5 {
+    background-image: url("images/");
+}
+
+#juncal-exterior-6 {
+    background-image: url("images/")
+}
 
 /*RESPONSIVE*/
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+
+    /*header*/
+    .turno-online {
+        display: none;
+    }
+
+    #header-turnos img {
+        margin: 20px 0 0 20px;
+        width: 90%;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .abrir-menu {
+        display: block;
+        background-color: #f5f5f5;
+        color: #319F5A;
+        border: none;
+        padding: 10px 15px;
+        margin: 20px 20px 0 0;
+        font-size: 32px;
+    }
+
+    .cerrar-menu {
+        display: block;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 32px;
+        margin: 0 0 30px 0;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        width: 60%;
+        margin: 0 0 0 0;
+        top: 0;
+        right: 0;
+        border-radius: 20px;
+        gap: 1rem;
+        padding: 2rem;
+        background-color: #319F5A;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        gap: 3rem;
+    }
+
+    .nav-list a {
+        width: 100%;
+        text-align: right;
+        border-bottom: 2px solid white;
+        padding-bottom: 0.5rem;
+    }
+
+    .nav-list a:last-child {
+        border-bottom: none;
+    }
+
+
     .contact-form-container {
         padding: 20px;
     }
@@ -517,6 +689,11 @@ main.horarios {
 
     .contact-form .btn {
         width: 100%;
+    }
+
+    .ubicacion-sanatorio {
+        padding: 10px;
+        margin: 10px;
     }
 
 }
@@ -832,51 +1009,4 @@ main.horarios {
     color: #134661;
     margin: 0;
     font-weight: 700;
-}
-
-
-/* Noticias Index*/
-
-.texto-noticias {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 1030px;
-}
-
-.texto-noticias p {
-    font-size: 24px;
-    color: #ffffff;
-    margin: 0;
-    font-weight: 400;
-}
-
-.texto-noticias h3 {
-    font-size: 42px;
-    color: #ffffff;
-    margin: 0;
-    font-weight: 700;    
-}
-
-.texto-noticias h6 {
-    font-size: 18px;
-    color: #ffffff;
-    margin: 0;
-    font-weight: 700;    
-}
-
-#noticias {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 80px;
-    background-color: #76A9D7;
-    height: 550px;
-    align-items: center;
-    padding: 40px;
-    margin: 30px 0px 0px 0px;
-    justify-content: space-evenly;
-}
-
-#noticias img {
-    border-radius: 60px;
 }
