@@ -65,8 +65,8 @@ p {
 .turno-online {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin: 16px 16px 0 0;
+    margin: 30px 20px 0 0;
+    align-items: center;
 }
 
 .turno-online p {
@@ -82,7 +82,7 @@ p {
     height: 50px;
     justify-content: center;
     align-items: center;
-    margin: 0px 0px 20px 0px
+    margin: 0px 0px 10px 0px
 }
 
 /* header */
@@ -91,18 +91,22 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
+#header-turnos img {
+    margin: 30px 0px 0px 30px;
 }
 
 nav {
     width: 100%;
-    padding-right: 80px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 15px 0px 0px 0px;
     background-color: #319F5A;
-    padding: 15px 30px 15px 0px
+    padding: 15px 30px 15px 0px;
+    gap: 120px;
+    font-size: 1.5rem;
 }
 
 .nav-list {
@@ -196,8 +200,23 @@ nav {
 
 #especialidades-medicas {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 24px;
+    padding: 25px;
+}
+
+#especialidades-medicas h1 {
+    font-size: 42px;
+    color: #134661;
+    margin: 0;
+    font-weight: 700;
+    padding: 0px 0px 0px 60px;
+}
+
+.especialidades {
+    display: flex;
     margin: 10px;
+    justify-content: space-evenly;
 }
 
 #especialidades-medicas article a {
@@ -249,6 +268,7 @@ nav {
     transform: translateY(0px);
 }
 
+
 /*footer*/
 footer {
     background-color: #40A365;
@@ -261,6 +281,10 @@ footer p {
     font-weight: 400;
     color: #ffffff;
     font-size: 0.9rem;
+}
+
+footer h6 {
+    font-size: 1.5rem; 
 }
 
 .institucional ul,
@@ -303,6 +327,7 @@ footer p {
     flex-direction: row;
     gap: 75px;
 }
+
 
 /*formulario de contacto*/
 .contact-form {
@@ -577,27 +602,27 @@ main.horarios {
 /*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
 
 #juncal-exterior-1 {
-    background-image: url("images/");
+    background-image: url("img/juncal-exterior-1.jpg");
 }
 
 #juncal-exterior-2 {
-    background-image: url("images/")
+    background-image: url("img/juncal-exterior-2.jpg")
 }
 
 #juncal-exterior-3 {
-    background-image: url("images/");
+    background-image: url("img/juncal-exterior-3.jpg");
 }
 
 #juncal-exterior-4 {
-    background-image: url("images/");
+    background-image: url("img/juncal-exterior-6.jpg");
 }
 
 #juncal-exterior-5 {
-    background-image: url("images/");
+    background-image: url("img/juncal-exterior-7.jpg");
 }
 
 #juncal-exterior-6 {
-    background-image: url("images/")
+    background-image: url("img/juncal-exterior-8.jpg")
 }
 
 /*RESPONSIVE*/
@@ -917,7 +942,7 @@ main.horarios {
 
 .texto-gestion p {
     font-size: 30px;
-    margin: 12px;
+    margin: 10px;
     font-weight: 400;
 }
 
@@ -928,7 +953,7 @@ main.horarios {
 .texto-gestion {
     display: flex;
     align-items: flex-start;
-    gap: 32px;
+    gap: 50px;
 }
 
 #gestion-de-calidad h3 {
@@ -947,7 +972,7 @@ main.horarios {
 
 .mision p,
 .vision p {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0px;
     font-weight: 400;
 }
@@ -966,10 +991,10 @@ main.horarios {
     flex-direction: column;
     gap: 10px;
     width: 650px;
-    height: 290px;
-    border: solid 5px #134661;
-    border-radius: 85px;
-    padding: 40px;
+    height: 260px;
+    border: solid 3px #134661;
+    border-radius: 100px;
+    padding: 40px 40px 40px 45px;
 }
 
 #mision-vision {
@@ -986,7 +1011,7 @@ main.horarios {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
 }
 
 #iconos p {
@@ -1009,4 +1034,50 @@ main.horarios {
     color: #134661;
     margin: 0;
     font-weight: 700;
+}
+
+/* Noticias Index*/
+
+.texto-noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 1030px;
+}
+
+.texto-noticias p {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 400;
+}
+
+.texto-noticias h3 {
+    font-size: 42px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;    
+}
+
+.texto-noticias h6 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;    
+}
+
+#noticias {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    background-color: #76A9D7;
+    height: 550px;
+    align-items: center;
+    padding: 40px;
+    margin: 30px 0px 0px 0px;
+    justify-content: space-evenly;
+}
+
+#noticias img {
+    border-radius: 60px;
 }
