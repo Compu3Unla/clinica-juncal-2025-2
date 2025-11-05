@@ -493,44 +493,44 @@ main.horarios {
 
 /* galeria */
 #galeria {
-	display: none;
-	width: 100%;
-	justify-content: center;
-	height: 100vh;
-	background-color: #000000;
-	position: absolute;
-	top: 0;
-	z-index: 10;
+    display: none;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    z-index: 10;
 }
 
 #galeria-oculta {
-	display: flex;
-	width: 100%;
-	max-width: 1450px;
-	overflow: hidden;
-	z-index: 20;
+    display: flex;
+    width: 100%;
+    max-width: 1450px;
+    overflow: hidden;
+    z-index: 20;
 }
 
 .fraccion-galeria {
-	display: flex;
-	align-items: center;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	width: 100%;
-	min-width: 1450px;
-	height: 100vh;
-	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    min-width: 1450px;
+    height: 100vh;
+    justify-content: space-between;
 }
 
 .primer-ultima-flecha {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .close {
-	position: absolute;
-	top: 10px;
-	right: 2%;
+    position: absolute;
+    top: 10px;
+    right: 2%;
 }
 
 #miniaturas-proyectos {
@@ -544,7 +544,7 @@ main.horarios {
 #miniaturas-proyectos article {
     display: flex;
     gap: 12px;
-} 
+}
 
 #miniaturas {
     /* width: 100%; */
@@ -577,27 +577,27 @@ main.horarios {
 /*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
 
 #juncal-exterior-1 {
-	background-image: url("images/");
+    background-image: url("images/");
 }
 
 #juncal-exterior-2 {
-	background-image: url("images/")
+    background-image: url("images/")
 }
 
 #juncal-exterior-3 {
-	background-image:url("images/");
+    background-image: url("images/");
 }
 
 #juncal-exterior-4 {
-	background-image:url("images/");
+    background-image: url("images/");
 }
 
 #juncal-exterior-5 {
-	background-image: url("images/");
+    background-image: url("images/");
 }
 
 #juncal-exterior-6 {
-	background-image: url("images/")
+    background-image: url("images/")
 }
 
 /*RESPONSIVE*/
@@ -605,17 +605,17 @@ main.horarios {
 
     /*header*/
     .turno-online {
-    display: none;
+        display: none;
     }
 
     #header-turnos img {
-    margin: 20px 0 0 20px;
-    width: 90%;
+        margin: 20px 0 0 20px;
+        width: 90%;
     }
 
     .nav.visible {
-    opacity: 1;
-    visibility: visible;
+        opacity: 1;
+        visibility: visible;
     }
 
     .abrir-menu {
@@ -663,14 +663,14 @@ main.horarios {
     }
 
     .nav-list a {
-    width: 100%;
-    text-align: right;
-    border-bottom: 2px solid white;
-    padding-bottom: 0.5rem;
+        width: 100%;
+        text-align: right;
+        border-bottom: 2px solid white;
+        padding-bottom: 0.5rem;
     }
 
     .nav-list a:last-child {
-    border-bottom: none;
+        border-bottom: none;
     }
 
 
