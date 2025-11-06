@@ -701,7 +701,7 @@ main.horarios {
     }
 
     .contact-form-buttons {
-        flex-direction: row;
+        flex-direction: column;
         gap: 40px;
     }
 
