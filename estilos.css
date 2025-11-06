@@ -204,7 +204,7 @@ nav {
     margin-left: 5vh;
 }
 
-.texto-hero h2{
+.texto-hero h2 {
     font-size: 2.5rem;
 }
 
@@ -240,7 +240,7 @@ nav {
 
 .especialidades img {
     border-radius: 20px;
- }
+}
 
 #especialidades-medicas article a {
     display: block;
@@ -350,7 +350,6 @@ footer h6 {
     flex-direction: row;
     gap: 75px;
 }
-
 
 /*formulario de contacto*/
 .contact-form {
@@ -555,7 +554,7 @@ main.horarios {
 
 #galeria-ampliada {
     display: none;
-     position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -647,8 +646,8 @@ main.horarios {
     }
 
     #header-turnos img {
-    width: 70%;
-    margin: 20px 0 0 50px;
+        width: 70%;
+        margin: 20px 0 0 50px;
     }
 
     .label-menu-hamburguesa {
@@ -659,23 +658,23 @@ main.horarios {
     }
 
     #menu-hamburguesa {
-    display: none;
+        display: none;
     }
 
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    list-style: none;
-    background-color: #319F5A;
-    padding: 20px 0;
-    margin: 0;
-    width: 100%;
-  }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+        background-color: #319F5A;
+        padding: 20px 0;
+        margin: 0;
+        width: 100%;
+    }
 
-    #menu-hamburguesa:checked ~ .nav-list {
-    display: flex;
+    #menu-hamburguesa:checked~.nav-list {
+        display: flex;
     }
 
     /*formulario de contacto*/
@@ -683,7 +682,7 @@ main.horarios {
     .contact-form input,
     .contact-form textarea {
         font-size: 20px;
-        padding: 16px 18px;
+        padding: 16px;
     }
 
     .contact-form-container {
@@ -691,13 +690,13 @@ main.horarios {
     }
 
     .contact-form h2 {
-        text-align: center;
+        text-align: left;
         font-size: 2rem;
     }
 
     .contact-form-footer {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         gap: 40px;
     }
 
@@ -715,12 +714,12 @@ main.horarios {
 
     .contact-form-checkbox {
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 300;
     }
 
     .contact-form-checkbox input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+        width: 20px;
+        height: 20px;
     }
 
     /*ubicacion sanatorio*/
@@ -740,88 +739,89 @@ main.horarios {
         font-size: 1.2rem;
     }
 
-/*main*/
+    /*main*/
 
     main {
-    padding: 60px 30px;
+        padding: 60px 30px;
     }
 
-/*footer*/
+    /*footer*/
 
     footer {
-    flex-direction: column;
-    padding: 40px 40px 80px 40px;
-    gap: 60px;
+        flex-direction: column;
+        padding: 40px 40px 80px 40px;
+        gap: 60px;
     }
 
     .menu-footer {
-    flex-direction: column;
-    gap: 40px;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .menu-footer a {
-    margin: 0 auto;
+        margin: 0 auto;
     }
 
     .menu-footer a img {
-    width: 200px;
-    margin: 0 auto;
+        width: 200px;
+        margin: 0 auto;
     }
 
     .institucional,
     .pacientes,
     .solicitudes {
-    border: none;
-    padding: 0;
+        border: none;
+        padding: 0;
     }
 
     .institucional ul,
     .pacientes ul,
     .solicitudes ul {
-    align-items: flex-start;
-    gap: 10px;
+        align-items: flex-start;
+        gap: 10px;
     }
 
     .redes-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
     }
 
     .redes-sociales {
-    gap: 34px;
+        gap: 34px;
     }
 
     .redes-sociales img {
-    width: 48px;
-     height: 48px;
+        width: 48px;
+        height: 48px;
     }
 
     .contactos {
-     align-items: flex-start;
-    gap: 6px;
+        align-items: flex-start;
+        gap: 6px;
     }
 
     footer p {
-     font-size: 1.2rem;
+        font-size: 1.2rem;
     }
 
     footer h6 {
-     font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 }
 
 /*responsive blocks header*/
 
-    @media (min-width: 501px) {
+@media (min-width: 501px) {
+
     #menu-hamburguesa,
     .label-menu-hamburguesa {
-    display: none !important;
+        display: none !important;
     }
 
     nav {
-    display: flex !important;
+        display: flex !important;
     }
 }
 
