@@ -65,8 +65,8 @@ p {
 .turno-online {
     display: flex;
     flex-direction: column;
-    margin: 30px 20px 0 0;
     align-items: center;
+    margin: 30px 20px 0 0;
 }
 
 .turno-online p {
@@ -78,19 +78,25 @@ p {
     border-radius: 20px;
     background: #134661;
     display: flex;
-    width: 430px;
+    width: 350px;
     height: 50px;
     justify-content: center;
     align-items: center;
+    font-size: 1.3rem;
     margin: 0px 0px 10px 0px
 }
 
 /* header */
 
+#sanatorio-juncal-logo {
+    margin: 30px 0 0 20px;
+}
+
 #header-turnos {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 #header-turnos img/galeria/ {
@@ -100,13 +106,12 @@ p {
 nav {
     width: 100%;
     display: flex;
+    background-color: #319F5A;
+    padding: 15px 25px;
+    gap: 50px;
+    font-size: 1.2rem;
     justify-content: flex-end;
     align-items: center;
-    margin: 15px 0px 0px 0px;
-    background-color: #319F5A;
-    padding: 15px 30px 15px 0px;
-    gap: 120px;
-    font-size: 1.5rem;
 }
 
 .nav-list {
@@ -196,6 +201,16 @@ nav {
 .texto-hero h2,
 .texto-hero p {
     color: white;
+    margin-left: 5vh;
+}
+
+.texto-hero h2{
+    font-size: 2.5rem;
+}
+
+.texto-hero p {
+    font-size: 2rem;
+    margin-bottom: 3vh;
 }
 
 #especialidades-medicas {
@@ -218,6 +233,14 @@ nav {
     margin: 10px;
     justify-content: space-evenly;
 }
+
+.especialidades article {
+    margin: auto;
+}
+
+.especialidades img {
+    border-radius: 20px;
+ }
 
 #especialidades-medicas article a {
     display: block;
@@ -278,9 +301,9 @@ footer {
 }
 
 footer p {
-    font-weight: 400;
+    font-weight: 300;
     color: #ffffff;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 footer h6 {
@@ -1018,19 +1041,25 @@ main.horarios {
 }
 
 .texto-gestion p {
-    font-size: 30px;
+    /* font-size: 30px;
     margin: 10px;
+    font-weight: 400; */
+    font-size: 1.3rem;
+    max-width: 75vh;
     font-weight: 400;
 }
 
-.texto-gestion img/galeria/ {
+.texto-gestion img {
     border-radius: 10%;
 }
 
 .texto-gestion {
-    display: flex;
+    /* display: flex;
     align-items: flex-start;
+    gap: 50px; */
+    display: flex;
     gap: 50px;
+    justify-content: center;
 }
 
 #gestion-de-calidad h3 {
@@ -1123,7 +1152,7 @@ main.horarios {
 }
 
 .texto-noticias p {
-    font-size: 24px;
+    font-size: 1.3rem;
     color: #ffffff;
     margin: 0;
     font-weight: 400;
@@ -1137,7 +1166,7 @@ main.horarios {
 }
 
 .texto-noticias h6 {
-    font-size: 18px;
+    font-size: 1.3rem;
     color: #ffffff;
     margin: 0;
     font-weight: 700;
