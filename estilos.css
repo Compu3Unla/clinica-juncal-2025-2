@@ -608,206 +608,6 @@ main.horarios {
     background-image: url("img/galeria/galeria-8.jpg")
 }
 
-/*RESPONSIVE*/
-
-@media (max-width: 500px) {
-
-    /*header*/
-    .turno-online {
-        display: none;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center
-    }
-
-    #header-turnos img {
-    width: 70%;
-    margin: 20px 0 0 50px;
-    }
-
-    .label-menu-hamburguesa {
-        color: #319F5A;
-        border: none;
-        padding: 10px 15px;
-        font-size: 48px;
-    }
-
-    #menu-hamburguesa {
-    display: none;
-    }
-
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    list-style: none;
-    background-color: #319F5A;
-    padding: 20px 0;
-    margin: 0;
-    width: 100%;
-  }
-
-    #menu-hamburguesa:checked ~ .nav-list {
-    display: flex;
-    }
-
-    /*formulario de contacto*/
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 20px;
-        padding: 16px 18px;
-    }
-
-    .contact-form-container {
-        padding: 20px;
-    }
-
-    .contact-form h2 {
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    .contact-form-footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .contact-form-buttons {
-        flex-direction: row;
-        gap: 40px;
-    }
-
-    .contact-form .btn,
-    .boton-ver-sede .btn {
-        padding: 14px 28px;
-        font-size: 18px;
-        border-radius: 10px;
-    }
-
-    .contact-form-checkbox {
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .contact-form-checkbox input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    }
-
-    /*ubicacion sanatorio*/
-
-    .ubicacion-sanatorio {
-        padding: 0px;
-        margin: 0px;
-        display: flex;
-    }
-
-    /*horarios*/
-
-    .columna h3 {
-        border-bottom: 1px solid #1a3b4c;
-        width: 70%;
-        padding-bottom: 8px;
-        font-size: 1.2rem;
-    }
-
-/*main*/
-
-    main {
-    padding: 60px 30px;
-    }
-
-/*footer*/
-
-    footer {
-    flex-direction: column;
-    padding: 40px 40px 80px 40px;
-    gap: 60px;
-    }
-
-    .menu-footer {
-    flex-direction: column;
-    gap: 40px;
-    }
-
-    .menu-footer a {
-    margin: 0 auto;
-    }
-
-    .menu-footer a img {
-    width: 200px;
-    margin: 0 auto;
-    }
-
-    .institucional,
-    .pacientes,
-    .solicitudes {
-    border: none;
-    padding: 0;
-    }
-
-    .institucional ul,
-    .pacientes ul,
-    .solicitudes ul {
-    align-items: flex-start;
-    gap: 10px;
-    }
-
-    .redes-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    }
-
-    .redes-sociales {
-    gap: 34px;
-    }
-
-    .redes-sociales img {
-    width: 48px;
-     height: 48px;
-    }
-
-    .contactos {
-     align-items: flex-start;
-    gap: 6px;
-    }
-
-    footer p {
-     font-size: 1.2rem;
-    }
-
-    footer h6 {
-     font-size: 1.5rem;
-    }
-}
-
-/*responsive blocks header*/
-
-    @media (min-width: 501px) {
-    #menu-hamburguesa,
-    .label-menu-hamburguesa {
-    display: none !important;
-    }
-
-    nav {
-    display: flex !important;
-    }
-}
-
-@media (max-width: 800px) {
-    .horarios-columns {
-        flex-direction: column;
-    }
-}
-
 
 
 
@@ -1157,4 +957,301 @@ main.horarios {
 
 #noticias img/galeria/ {
     border-radius: 60px;
+}
+
+
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 500px) {
+
+    /*header*/
+
+    .turno-online {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    #header-turnos img {
+    width: 70%;
+    margin: 20px 0 0 50px;
+    }
+
+    .label-menu-hamburguesa {
+        color: #319F5A;
+        border: none;
+        padding: 10px 15px;
+        font-size: 48px;
+    }
+
+    #menu-hamburguesa {
+    display: none;
+    }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    background-color: #319F5A;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+  }
+
+    #menu-hamburguesa:checked ~ .nav-list {
+    display: flex;
+    }
+
+    /*formulario de contacto*/
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 20px;
+        padding: 16px 18px;
+    }
+
+    .contact-form-container {
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contact-form-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .contact-form-buttons {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .contact-form .btn,
+    .boton-ver-sede .btn {
+        padding: 14px 28px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .contact-form-checkbox {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .contact-form-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    }
+
+    /*ubicacion sanatorio*/
+
+    .ubicacion-sanatorio {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+    }
+
+    /*horarios*/
+
+    .columna h3 {
+        border-bottom: 1px solid #1a3b4c;
+        width: 70%;
+        padding-bottom: 8px;
+        font-size: 1.2rem;
+    }
+
+    /*main contact*/
+
+    contact-form {
+    padding: 60px 30px;
+    }
+
+    /*index*/
+
+    #hero {
+        width: 300%;
+        display: flex;
+
+    }
+
+    .texto-hero h2 {
+    width: 30%;
+    font-size: 2.5rem;
+    }
+
+    .texto-hero p {
+    width: 30%;
+    font-size: 1.3rem;
+    }
+
+    /*especialidades médicas*/
+
+    #especialidades-medicas h1 {
+    font-size: 2rem;
+    padding: 0;
+    text-align: center;
+     }
+
+    .especialidades {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    }
+
+  #especialidades-medicas article a {
+    flex-direction: column;
+    }
+
+  #especialidades-medicas article img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    }
+
+  #texto-especialidades {
+    position: static;
+    opacity: 1;
+    width: 100%;
+    background-color: #319F5A;
+    margin-top: 10px;
+    }
+
+  #texto-especialidades h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+    color: white;
+    }
+
+  #texto-especialidades p {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    }
+
+    /*noticias*/
+
+    #noticias {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: auto;
+    background-color: #76A9D7;
+  }
+
+  #noticias img {
+    width: 130%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .texto-noticias {
+    width: 100%;
+    color: #fff;
+  }
+
+  .texto-noticias p {
+    font-size: 1.4rem;
+  }
+
+/*FOOTER*/
+
+    footer {
+    flex-direction: column;
+    padding: 40px 40px 80px 40px;
+    gap: 60px;
+    }
+
+    .menu-footer {
+    flex-direction: column;
+    gap: 40px;
+    }
+
+    .menu-footer a {
+    margin: 0 auto;
+    }
+
+    .menu-footer a img {
+    width: 200px;
+    margin: 0 auto;
+    }
+
+    .institucional,
+    .pacientes,
+    .solicitudes {
+    border: none;
+    padding: 0;
+    }
+
+    .institucional ul,
+    .pacientes ul,
+    .solicitudes ul {
+    align-items: flex-start;
+    gap: 10px;
+    }
+
+    .redes-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    }
+
+    .redes-sociales {
+    gap: 34px;
+    }
+
+    .redes-sociales img {
+    width: 48px;
+     height: 48px;
+    }
+
+    .contactos {
+     align-items: flex-start;
+    gap: 6px;
+    }
+
+    footer p {
+     font-size: 1.2rem;
+    }
+
+    footer h6 {
+     font-size: 1.5rem;
+    }
+}
+
+/*responsive blocks header*/
+
+    @media (min-width: 501px) {
+    #menu-hamburguesa,
+    .label-menu-hamburguesa {
+    display: none !important;
+    }
+
+    nav {
+    display: flex !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .horarios-columns {
+        flex-direction: column;
+    }
 }
