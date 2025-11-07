@@ -9,4 +9,4 @@ Luego de haber realizado los diferentes prototipos en figma decidimos hacer tres
 Trabajamos con GitHub para facilitranos como equipo, si bien fue un gran desafío para todos, llegamos a un resultado el cual quedamos muy conformes. 
 ### Aspectos técnicos
 El grupo en general trabajó con varias herramientas, computadores de escritorio, notebooks, tablets y celulares para chequear como se adaptaban en diferentes formatos y para ir avazando con el proyecto en su totalidad. En cuanto a la resolución trabajamos con 1920x1080px para desktop, para tablets 800px y adaptación para mobile completa a partir de los 500px. El editor de código fue Visual Studio Code. Link a figma:
-https://compu3unla.github.io/clinica-juncal-2025-2/contacto.html
+https://www.figma.com/design/QLjFK99UZfJecdaHq2X0Vj/Grupo-5--Salud-?node-id=192-2&t=C8dtMsk9M5MB9Agk-1
