@@ -514,8 +514,8 @@ main.horarios {
 
 .subtitulo {
     color: #1a3b4c;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 19px;
+    font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 0.8rem;
 }
@@ -526,6 +526,7 @@ main.horarios {
     margin-top: 1rem;
     margin-bottom: 0.3rem;
 }
+
 
 /* galeria */
 
@@ -728,12 +729,6 @@ main.horarios {
         width: 70%;
         padding-bottom: 8px;
         font-size: 1.2rem;
-    }
-
-    /*main*/
-
-    main {
-        padding: 60px 30px;
     }
 
     /*footer*/
@@ -1035,9 +1030,11 @@ main.horarios {
     /* font-size: 30px;
     margin: 10px;
     font-weight: 400; */
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     max-width: 75vh;
     font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 40px;
 }
 
 .texto-gestion img {
@@ -1161,6 +1158,10 @@ main.horarios {
     color: #ffffff;
     margin: 0;
     font-weight: 700;
+}
+
+#noticias img{
+    border-radius: 50px;
 }
 
 #noticias {
@@ -1377,7 +1378,7 @@ main.horarios {
   }
 
   #noticias img {
-    width: 130%;
+    width: 110%;
     height: auto;
     border-radius: 20px;
   }
