@@ -1236,6 +1236,12 @@ main.horarios {
 
     /*formulario de contacto*/
 
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
     .contact-form input,
     .contact-form textarea {
         font-size: 20px;
@@ -1285,6 +1291,8 @@ main.horarios {
         padding: 0px;
         margin: 0px;
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /*horarios*/
