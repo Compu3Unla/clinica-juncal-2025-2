@@ -8,31 +8,39 @@
     <meta name="keywords" content="">
     <title>Contacto - Sanatorio Juncal</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="icon" href="svg/logo/favicon-juncal.svg" type="image/svg+xml">
 </head>
 
 <body>
     <header>
         <section id="header-turnos">
             <a href="index.html">
-                <img id="sanatorio-juncal-logo" src="svg/logo-sanatorio-juncal.svg" alt="Sanatorio Juncal Logotipo"width="356" height="95"></a>
-            <button id="abrir" class="abrir-menu">☰</button>
+                <img id="sanatorio-juncal-logo" src="svg/logo/logo-sanatorio-juncal.svg" alt="Sanatorio Juncal Logotipo"
+                    width="250" height="71"></a>
             <article class="turno-online">
                 <h5>SOLICITAR TURNOS ONLINE</h5>
                 <p>TURNOS 4239-8008 - CONMUTADOR 4239-8000 </p>
             </article>
         </section>
+        <input type="checkbox" id="menu-hamburguesa">
+
+        <label for="menu-hamburguesa" class="label-menu-hamburguesa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="list-icon"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </label>
 
 
-         <nav id="nav" class="nav">
-         <button id="cerrar" class="cerrar-menu">✕</button>
-            <ul class="nav-list">
+        <nav class="nav-list">
             <a href="institucional.html">Institucional</a>
             <a href="#">Pacientes</a>
             <a href="#">Solicitudes</a>
             <a href="contacto.html">Contacto</a>
-        </ul>
         </nav>
     </header>
+
     <main>
         <section class="contact-form">
             <div class="contact-form-container">
@@ -45,30 +53,30 @@
                     <textarea placeholder="Asunto*" rows="5" required></textarea>
                     <textarea placeholder="Mensaje*" rows="10" required></textarea>
 
-                    <article class="contact-form-footer">
+                    <div class="contact-form-footer">
                         <label class="contact-form-checkbox">
                             <input type="checkbox" required> Acepto los Términos de Uso*
                         </label>
-                        <div class="contact-form-buttons">
-                            <button type="reset" class="btn reset">Borrar</button>
-                            <button type="submit" class="btn submit">Enviar</button>
-                        </div>
-                    </article>
+                    </div>
+                    <div class="contact-form-buttons">
+                        <button type="reset" class="btn reset">Borrar</button>
+                        <button type="submit" class="btn submit">Enviar</button>
+                    </div>
                 </form>
             </div>
+            <section class="ubicacion-sanatorio">
+                <h2 class="titulo-azul">UBICACIÓN</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.4338408088106!2d-58.399228223679124!3d-34.76985207289512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2e9b33aab0d%3A0xdf2ee50b46e7f13d!2sSanatorio%20Juncal!5e0!3m2!1ses!2sar!4v1761940662943!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="boton-ver-sede">
+                    <a href="https://www.google.com/maps/place/Sanatorio+Juncal/@-34.7698477,-58.3992282,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcd2e9b33aab0d:0xdf2ee50b46e7f13d!8m2!3d-34.7698521!4d-58.3966533!16s%2Fg%2F1tdk6cdj?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D"
+                        type="submit" class="btn submit">Ver sede</a>
+                </div>
+            </section>
         </section>
-
-        <h2 class="titulo-azul">UBICACIÓN</h2>
-        <section class="ubicacion-sanatorio">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.4338408088106!2d-58.399228223679124!3d-34.76985207289512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2e9b33aab0d%3A0xdf2ee50b46e7f13d!2sSanatorio%20Juncal!5e0!3m2!1ses!2sar!4v1761940662943!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
-        <div class="boton-ver-sede">
-            <button type="submit" class="btn submit">Ver sede</button>
-        </div>
         <section class="horarios-container">
             <h2 class="titulo-horarios">HORARIOS</h2>
 
@@ -124,7 +132,7 @@
     <footer>
         <div class="menu-footer">
             <a href="#">
-                <img src="logo/logo-juncal-blanco.svg" width="206" height="78" alt="Sanatorio Juncal logotipo">
+                <img src="svg/logo/logo-juncal-blanco.svg" width="150" height="59" alt="Sanatorio Juncal logotipo">
             </a>
             <div class="institucional">
                 <ul>
@@ -178,13 +186,14 @@
         <div class="redes-contacto">
             <div class="redes-sociales">
                 <a href="https://www.instagram.com/residenciasanatoriojuncal/" target="_blank"><img
-                        src="svg/instagram-icon.svg" alt="foto de instalagram"></a>
+                        src="svg/redes sociales/ri_instagram-fill.svg" width="38" height="38"
+                        alt="foto de instalagram"></a>
                 <a href="https://www.facebook.com/profile.php?id=61560966554230" target="_blank"><img
-                        src="svg/facebook-icon.svg" alt="foto de facebook"></a>
+                        src="svg/redes sociales/facebook-icon.svg" width="38" height="38" alt="foto de facebook"></a>
                 <a href="https://www.linkedin.com/company/sanatorio-juncal/" target="_blank"><img
-                        src="svg/linkedin-icon.svg" alt="foto de linkedin"></a>
+                        src="svg/redes sociales/linkedin-icon.svg" width="38" height="38" alt="foto de linkedin"></a>
                 <a href="https://www.youtube.com/@sanatoriojuncals.a.9195" target="_blank"><img
-                        src="svg/youtube-icon.svg" alt="foto de youtube"></a>
+                        src="svg/redes sociales/youtube-icon.svg" width="38" height="38" alt="foto de youtube"></a>
             </div>
             <div class="contactos">
                 <h6>Contactos</h6>
@@ -194,6 +203,5 @@
             </div>
         </div>
     </footer>
-</body>
 
-</html>
+</body>
