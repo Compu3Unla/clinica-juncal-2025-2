@@ -1107,10 +1107,6 @@ main.horarios {
 
     /*main contact*/
 
-    main .contact-form { 
-    padding: 60px 30px;
-    }
-
     /*index*/
 
     main {
@@ -1273,12 +1269,12 @@ main.horarios {
 /*responsive blocks header*/
 
     @media (min-width: 501px) {
-    #menu-hamburguesa,
-    .label-menu-hamburguesa {
+  #menu-hamburguesa,
+  .label-menu-hamburguesa {
     display: none !important;
-    }
+  }
 
-    nav {
+  nav {
     display: flex !important;
-    }
+  }
 }
