@@ -1,10 +1,12 @@
-Trabajo Práctico 4 – Computación 3
-Grupo 5 - Sanatorio juncal 
-Miembros - Maymo, Matheu, Benitez, Robledo
-
-
-Resolución de pantalla  1920x1080
-Resolucion Tablet       800px
-Resolucion mobile       50px
-
+# Trabajo práctico 4 - Computación III - 2025
+## Grupo 5 - Sanatorio juncal - Rediseño de Identidad y Web  
+## Integrantes: Maymo, Matheu, Benitez, Robledo
+### Resumen del Proyecto y Objetivos
+El desafío inicial fue modernizar la versión actual del logo del Sanatorio Juncal, que se percibía anticuada y con recursos gráficos poco adaptables.
+Como equipo, nuestro objetivo fue actualizar la imagen para que transmita confianza, profesionalismo y logre generar un ecosistema visual que haga la web:
+más moderna, funcional y clara para navegar con una distribución optimizada de la información.
+Luego de haber realizado los diferentes prototipos en figma decidimos hacer tres sitios para navegar (index.html, contacto.html e institucional.html) los cuales quedaron similares a nuestra búsqueda.
+Trabajamos con GitHub para facilitranos como equipo, si bien fue un gran desafío para todos, llegamos a un resultado el cual quedamos muy conformes. 
+### Aspectos técnicos
+El grupo en general trabajó con varias herramientas, computadores de escritorio, notebooks, tablets y celulares para chequear como se adaptaban en diferentes formatos y para ir avazando con el proyecto en su totalidad. En cuanto a la resolución trabajamos con 1920x1080px para desktop, para tablets 800px y adaptación para mobile completa a partir de los 500px. El editor de código fue Visual Studio Code. Link a figma:
 https://compu3unla.github.io/clinica-juncal-2025-2/contacto.html
