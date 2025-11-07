@@ -1298,11 +1298,15 @@ main.horarios {
 
     /*main contact*/
 
-    contact-form {
+    main .contact-form { 
     padding: 60px 30px;
     }
 
     /*index*/
+
+    main {
+        padding: 0;
+    }
 
     #hero {
         width: 300%;
