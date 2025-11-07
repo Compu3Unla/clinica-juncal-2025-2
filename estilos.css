@@ -1469,9 +1469,3 @@ main.horarios {
     display: flex !important;
     }
 }
-
-@media (max-width: 800px) {
-    .horarios-columns {
-        flex-direction: column;
-    }
-}
