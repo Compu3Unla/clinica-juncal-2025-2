@@ -1064,6 +1064,10 @@ main.horarios {
     margin: 60px;
 }
 
+.video-institucional {
+    border-radius: 40px;
+}
+
 .mision p,
 .vision p {
     font-size: 20px;
