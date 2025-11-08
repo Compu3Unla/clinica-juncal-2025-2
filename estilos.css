@@ -521,7 +521,6 @@ main.horarios {
     margin-bottom: 0.3rem;
 }
 
-
 /* galeria */
 
 #galeria {
@@ -793,7 +792,7 @@ main.horarios {
 
 /*responsive blocks header*/
 
-@media (min-width: 501px) {
+@media (min-width: 500px) {
 
     #menu-hamburguesa,
     .label-menu-hamburguesa {
