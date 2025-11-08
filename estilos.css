@@ -2,7 +2,6 @@
 
 body {
     background-color: #f1f1f1;
-    max-height: 100vh;
 }
 
 /*aplicaciones de fuentes*/
@@ -88,20 +87,23 @@ p {
 
 /* header */
 
+ .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
 #sanatorio-juncal-logo {
     margin: 30px 0 0 20px;
 }
 
-#header-turnos {
+/* #header-turnos {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-}
-
-#header-turnos img/galeria/ {
-    margin: 30px 0px 0px 30px;
-}
+} */
 
 nav {
     width: 100%;
@@ -115,7 +117,6 @@ nav {
 }
 
 .nav-list {
-    display: flex;
     gap: 100px;
     list-style-type: none;
 }
@@ -248,13 +249,6 @@ nav {
     overflow: hidden;
     display: flex;
     justify-content: center;
-}
-
-#especialidades-medicas article img/galeria/ {
-    width: 400px;
-    height: auto;
-    display: block;
-    border-radius: 20px;
 }
 
 #texto-especialidades h2 {
@@ -1164,10 +1158,6 @@ main.horarios {
     font-weight: 700;
 }
 
-#noticias img{
-    border-radius: 50px;
-}
-
 #noticias {
     display: flex;
     flex-direction: row-reverse;
@@ -1180,7 +1170,7 @@ main.horarios {
     justify-content: space-evenly;
 }
 
-#noticias img/galeria/ {
+#noticias img {
     border-radius: 60px;
 }
 
@@ -1208,8 +1198,8 @@ main.horarios {
     }
 
     #header-turnos img {
-    width: 70%;
-    margin: 20px 0 0 50px;
+        width: 70%;
+        margin: 20px 0 0 50px;
     }
 
     .label-menu-hamburguesa {
@@ -1220,23 +1210,23 @@ main.horarios {
     }
 
     #menu-hamburguesa {
-    display: none;
+        display: none;
     }
 
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    list-style: none;
-    background-color: #319F5A;
-    padding: 20px 0;
-    margin: 0;
-    width: 100%;
-  }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+        background-color: #319F5A;
+        padding: 20px 0;
+        margin: 0;
+        width: 100%;
+    }
 
-    #menu-hamburguesa:checked ~ .nav-list {
-    display: flex;
+    #menu-hamburguesa:checked~.nav-list {
+        display: flex;
     }
 
     /*formulario de contacto*/
@@ -1286,8 +1276,8 @@ main.horarios {
     }
 
     .contact-form-checkbox input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+        width: 20px;
+        height: 20px;
     }
 
     /*ubicacion sanatorio*/
@@ -1324,161 +1314,161 @@ main.horarios {
     }
 
     .texto-hero h2 {
-    width: 30%;
-    font-size: 2.5rem;
+        width: 30%;
+        font-size: 2.5rem;
     }
 
     .texto-hero p {
-    width: 30%;
-    font-size: 1.3rem;
+        width: 30%;
+        font-size: 1.3rem;
     }
 
     /*especialidades médicas*/
 
     #especialidades-medicas h1 {
-    font-size: 2rem;
-    padding: 0;
-    text-align: center;
-     }
+        font-size: 2rem;
+        padding: 0;
+        text-align: center;
+    }
 
     .especialidades {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
-  #especialidades-medicas article a {
-    flex-direction: column;
+    #especialidades-medicas article a {
+        flex-direction: column;
     }
 
-  #especialidades-medicas article img {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
+    #especialidades-medicas article img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
     }
 
-  #texto-especialidades {
-    position: static;
-    opacity: 1;
-    width: 100%;
-    background-color: #319F5A;
-    margin-top: 10px;
+    #texto-especialidades {
+        position: static;
+        opacity: 1;
+        width: 100%;
+        background-color: #319F5A;
+        margin-top: 10px;
     }
 
-  #texto-especialidades h2 {
-    text-align: center;
-    margin: 0 0 10px 0;
-    color: white;
+    #texto-especialidades h2 {
+        text-align: center;
+        margin: 0 0 10px 0;
+        color: white;
     }
 
-  #texto-especialidades p {
-    font-size: 1.4rem;
-    text-align: center;
-    color: white;
+    #texto-especialidades p {
+        font-size: 1.4rem;
+        text-align: center;
+        color: white;
     }
 
     /*noticias*/
 
     #noticias {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    height: auto;
-    background-color: #76A9D7;
-  }
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        height: auto;
+        background-color: #76A9D7;
+    }
 
-  #noticias img {
-    width: 110%;
-    height: auto;
-    border-radius: 20px;
-  }
+    #noticias img {
+        width: 110%;
+        height: auto;
+        border-radius: 20px;
+    }
 
-  .texto-noticias {
-    width: 100%;
-    color: #fff;
-  }
+    .texto-noticias {
+        width: 100%;
+        color: #fff;
+    }
 
-  .texto-noticias p {
-    font-size: 1.4rem;
-  }
+    .texto-noticias p {
+        font-size: 1.4rem;
+    }
 
-/*FOOTER*/
+    /*FOOTER*/
 
     footer {
-    flex-direction: column;
-    padding: 40px 40px 80px 40px;
-    gap: 60px;
+        flex-direction: column;
+        padding: 40px 40px 80px 40px;
+        gap: 60px;
     }
 
     .menu-footer {
-    flex-direction: column;
-    gap: 40px;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .menu-footer a {
-    margin: 0 auto;
+        margin: 0 auto;
     }
 
     .menu-footer a img {
-    width: 200px;
-    margin: 0 auto;
+        width: 200px;
+        margin: 0 auto;
     }
 
     .institucional,
     .pacientes,
     .solicitudes {
-    border: none;
-    padding: 0;
+        border: none;
+        padding: 0;
     }
 
     .institucional ul,
     .pacientes ul,
     .solicitudes ul {
-    align-items: flex-start;
-    gap: 10px;
+        align-items: flex-start;
+        gap: 10px;
     }
 
     .redes-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
     }
 
     .redes-sociales {
-    gap: 34px;
+        gap: 34px;
     }
 
     .redes-sociales img {
-    width: 48px;
-     height: 48px;
+        width: 48px;
+        height: 48px;
     }
 
     .contactos {
-     align-items: flex-start;
-    gap: 6px;
+        align-items: flex-start;
+        gap: 6px;
     }
 
     footer p {
-     font-size: 1.2rem;
+        font-size: 1.2rem;
     }
 
     footer h6 {
-     font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-}
 
 /*responsive blocks header*/
 
-    @media (min-width: 501px) {
-  #menu-hamburguesa,
-  .label-menu-hamburguesa {
-    display: none !important;
-  }
+@media (min-width: 501px) {
 
-  nav {
-    display: flex !important;
-  }
+    #menu-hamburguesa,
+    .label-menu-hamburguesa {
+        display: none !important;
+    }
+
+    nav {
+        display: flex !important;
+    }
 }
