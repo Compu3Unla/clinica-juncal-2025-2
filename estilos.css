@@ -32,31 +32,35 @@ h3 {
 h5 {
   font-weight: 800;
   color: #ffffff;
-  /* font-size: 1.5rem; */
 }
 
 h6 {
   font-weight: 700;
   color: #ffffff;
-  /* font-size: 1.6rem; */
 }
 
 a {
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
-  /* font-size: 2rem; */
 }
 
 p {
   font-weight: 600;
   color: #000000;
   line-height: 1.6;
-  /* font-size: 1.2rem; */
 }
 
 #texto-noticias p {
   color: #ffffff;
+}
+
+a, button, .especialidades img {
+  transition: all 0.3s ease;
+}
+
+.especialidades a:hover img {
+  transform: scale(1.05);
 }
 
 /* turno online boton */
@@ -244,19 +248,19 @@ nav {
   justify-content: center;
 }
 
-#texto-especialidades h2 {
+.texto-especialidades h2 {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 900;
 }
 
-#texto-especialidades p {
+.texto-especialidades p {
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
 }
 
-#texto-especialidades {
+.texto-especialidades {
   background-color: #319f5a;
   width: 371px;
   height: auto;
@@ -270,7 +274,7 @@ nav {
   transition: opacity 0.6s ease;
 }
 
-#especialidades-medicas a:hover #texto-especialidades {
+#especialidades-medicas a:hover .texto-especialidades {
   opacity: 1;
 }
 
@@ -888,6 +892,10 @@ main.horarios {
     align-items: center;
   }
 
+  .ubicacion-sanatorio iframe {
+    width: 100%;
+  }
+
   /* horarios */
 
   .columna h3 {
@@ -945,7 +953,7 @@ main.horarios {
     border-radius: 16px;
   }
 
-  #texto-especialidades {
+  .texto-especialidades {
     position: static;
     opacity: 1;
     width: 100%;
@@ -953,13 +961,13 @@ main.horarios {
     margin-top: 10px;
   }
 
-  #texto-especialidades h2 {
+  .texto-especialidades h2 {
     text-align: center;
     margin: 0 0 10px 0;
     color: white;
   }
 
-  #texto-especialidades p {
+  .texto-especialidades p {
     font-size: 1.4rem;
     text-align: center;
     color: white;
