@@ -13,17 +13,19 @@
 
 <body>
     <header>
-        <section id="header-turnos">
-            <a href="index.html">
+        <div class="header-top">
+            <a href="index.html" class="logo">
                 <img id="sanatorio-juncal-logo" src="svg/logo/logo-sanatorio-juncal.svg" alt="Sanatorio Juncal Logotipo"
-                    width="250" height="71"></a>
-            <article class="turno-online">
-                <h5>SOLICITAR TURNOS ONLINE</h5>
-                <p>TURNOS 4239-8008 - CONMUTADOR 4239-8000 </p>
-            </article>
-        </section>
-        <input type="checkbox" id="menu-hamburguesa">
+                    width="250" height="71">
+            </a>
 
+            <div class="turno-online">
+                <h5>SOLICITAR TURNOS ONLINE</h5>
+                <p>TURNOS 4239-8008 - CONMUTADOR 4239-8000</p>
+            </div>
+        </div>
+
+        <input type="checkbox" id="menu-hamburguesa">
         <label for="menu-hamburguesa" class="label-menu-hamburguesa">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="list-icon"
                 viewBox="0 0 16 16">
@@ -32,11 +34,10 @@
             </svg>
         </label>
 
-
         <nav class="nav-list">
             <a href="institucional.html">Institucional</a>
-            <a href="#">Pacientes</a>
-            <a href="#">Solicitudes</a>
+            <span>Pacientes</span>
+            <span>Solicitudes</span>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
@@ -45,7 +46,7 @@
         <section class="contact-form">
             <div class="contact-form-container">
                 <h2>FORMULARIO DE CONTACTO</h2>
-                <form>
+                <form method="post" action="#">
                     <input type="text" placeholder="Destinatario*" required>
                     <input type="text" placeholder="Nombre y Apellido*" required>
                     <input type="email" placeholder="Mail*" required>
@@ -64,6 +65,7 @@
                     </div>
                 </form>
             </div>
+
             <section class="ubicacion-sanatorio">
                 <h2 class="titulo-azul">UBICACIÓN</h2>
                 <iframe
@@ -77,127 +79,105 @@
                 </div>
             </section>
         </section>
+
         <section class="horarios-container">
             <h2 class="titulo-horarios">HORARIOS</h2>
 
             <div class="horarios-columns">
-                <!--columna general-->
                 <div class="columna">
                     <h3 class="subtitulo">GENERAL</h3>
                     <p class="categoria">De atención</p>
-                    <p>Lunes a viernes de 7 a 20 hs.<br>
-                        Sábados de 8 a 12 hs.<br>
-                        (Atención solo con turno previo)
-                    </p>
+                    <p>Lunes a viernes de 7 a 20 hs.</p>
+                    <p>Sábados de 8 a 12 hs.</p>
+                    <p>(Atención solo con turno previo)</p>
 
                     <p class="categoria">Consultorios</p>
-                    <p>Lunes a viernes de 8 a 19 hs.<br>
-                        Sábados de 9 a 12 hs.<br>
-                        (Atención solo con turno previo)
-                    </p>
+                    <p>Lunes a viernes de 8 a 19 hs.</p>
+                    <p>Sábados de 9 a 12 hs.</p>
+                    <p>(Atención solo con turno previo)</p>
                 </div>
-                <!--columna laboratorio-->
+
                 <div class="columna">
                     <h3 class="subtitulo">LABORATORIO</h3>
                     <p class="categoria">Retirar análisis</p>
-                    <p>Lunes a viernes de 8 a 19 hs.<br>
-                        Sábados de 8 a 12 hs.
-                    </p>
+                    <p>Lunes a viernes de 8 a 19 hs.</p>
+                    <p>Sábados de 8 a 12 hs.</p>
 
                     <p class="categoria">Extracción</p>
                     <p>Lunes a sábados de 7 a 10 hs.</p>
                 </div>
 
-                <!--columna visitas-->
                 <div class="columna">
                     <h3 class="subtitulo">VISITAS</h3>
 
                     <p class="categoria">Internación General</p>
-                    <p>Lunes a domingo de<br>
-                        8 a 12:30 hs / 15:30 a 20 hs.</p>
+                    <p>Lunes a domingo de</p>
+                    <p>8 a 12:30 hs / 15:30 a 20 hs.</p>
 
                     <p class="categoria">Cuidados Intensivos y Unidad Coronaria</p>
-                    <p>Lunes a domingo de<br>
-                        11:30 a 12:30 hs / 19 a 20 hs.</p>
+                    <p>Lunes a domingo de</p>
+                    <p>11:30 a 12:30 hs / 19 a 20 hs.</p>
 
                     <p class="categoria">Cuidados Intensivos Pediátricos</p>
-                    <p>Lunes a domingo de<br>
-                        11:30 a 12:30 hs / 17 a 19 hs.</p>
+                    <p>Lunes a domingo de</p>
+                    <p>11:30 a 12:30 hs / 17 a 19 hs.</p>
                 </div>
             </div>
         </section>
     </main>
 
-
     <footer>
         <div class="menu-footer">
-            <a href="#">
+            <a href="index.html">
                 <img src="svg/logo/logo-juncal-blanco.svg" width="150" height="59" alt="Sanatorio Juncal logotipo">
             </a>
-            <div class="institucional">
+
+            <section class="institucional">
+                <h6><a href="institucional.html">Institucional</a></h6>
                 <ul>
-                    <li>
-                        <h6>Institucional</h6>
-                    </li>
-                    <li>
-                        <p>Instalaciones</p>
-                    </li>
-                    <li>
-                        <p>RRHH</p>
-                    </li>
+                    <li>Instalaciones</li>
+                    <li>RRHH</li>
                 </ul>
-            </div>
-            <div class="pacientes">
+            </section>
+
+            <section class="pacientes">
+                <h6>Pacientes</h6>
                 <ul>
-                    <li>
-                        <h6>Pacientes</h6>
-                    </li>
-                    <li>
-                        <p>Turnos</p>
-                    </li>
-                    <li>
-                        <p>Especialidades Medicas</p>
-                    </li>
+                    <li>Turnos</li>
+                    <li>Especialidades Médicas</li>
                 </ul>
-            </div>
-            <div class="solicitudes">
+            </section>
+
+            <section class="solicitudes">
+                <h6>Solicitudes</h6>
                 <ul>
-                    <li>
-                        <h6>Solicitudes</h6>
-                    </li>
-                    <li>
-                        <p>Solicitud de Historial</p>
-                    </li>
-                    <li>
-                        <p>Solicitud de Resultados</p>
-                    </li>
-                    <li>
-                        <p>Preparacion para estudios</p>
-                    </li>
-                    <li>
-                        <p>Consentimientos</p>
-                    </li>
-                    <li>
-                        <p>informados </p>
-                    </li>
+                    <li>Solicitud de Historial</li>
+                    <li>Solicitud de Resultados</li>
+                    <li>Preparación para estudios</li>
+                    <li>Consentimientos informados</li>
                 </ul>
-            </div>
+            </section>
         </div>
+
         <div class="redes-contacto">
             <div class="redes-sociales">
-                <a href="https://www.instagram.com/residenciasanatoriojuncal/" target="_blank"><img
-                        src="svg/redes sociales/ri_instagram-fill.svg" width="38" height="38"
-                        alt="foto de instalagram"></a>
-                <a href="https://www.facebook.com/profile.php?id=61560966554230" target="_blank"><img
-                        src="svg/redes sociales/facebook-icon.svg" width="38" height="38" alt="foto de facebook"></a>
-                <a href="https://www.linkedin.com/company/sanatorio-juncal/" target="_blank"><img
-                        src="svg/redes sociales/linkedin-icon.svg" width="38" height="38" alt="foto de linkedin"></a>
-                <a href="https://www.youtube.com/@sanatoriojuncals.a.9195" target="_blank"><img
-                        src="svg/redes sociales/youtube-icon.svg" width="38" height="38" alt="foto de youtube"></a>
+                <a href="https://www.instagram.com/residenciasanatoriojuncal/" target="_blank">
+                    <img src="svg/redes sociales/ri_instagram-fill.svg" width="38" height="38" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61560966554230" target="_blank">
+                    <img src="svg/redes sociales/facebook-icon.svg" width="38" height="38" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/sanatorio-juncal/" target="_blank">
+                    <img src="svg/redes sociales/linkedin-icon.svg" width="38" height="38" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/@sanatoriojuncals.a.9195" target="_blank">
+                    <img src="svg/redes sociales/youtube-icon.svg" width="38" height="38" alt="YouTube">
+                </a>
             </div>
+
             <div class="contactos">
-                <h6>Contactos</h6>
-                <p>telefono y horarios</p>
+                <h6><a href="contacto.html">Contacto</a></h6>
+                <p>Teléfono y horarios</p>
                 <p>Lunes a Viernes - 08:00hs a 19:00hs</p>
                 <p>WhatsApp - 11234353 / 4239-8000</p>
             </div>
@@ -205,3 +185,5 @@
     </footer>
 
 </body>
+
+</html>

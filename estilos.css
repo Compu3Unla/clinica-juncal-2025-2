@@ -1,1227 +1,817 @@
 @charset "UTF-8";
 
 body {
-    background-color: #f1f1f1;
-    max-height: 100vh;
+  background-color: #f1f1f1;
 }
 
-/*aplicaciones de fuentes*/
+/* aplicaciones de fuentes */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
 html,
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 h2 {
-    font-weight: 900;
-    color: #000000;
+  font-weight: 900;
+  color: #000000;
 }
 
 h3 {
-    font-weight: 700;
-    color: #ffffff;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 h5 {
-    font-weight: 800;
-    color: #ffffff;
-    /* font-size: 1.5rem; */
+  font-weight: 800;
+  color: #ffffff;
 }
 
 h6 {
-    font-weight: 700;
-    color: #ffffff;
-    /* font-size: 1.6rem; */
+  font-weight: 700;
+  color: #ffffff;
 }
 
 a {
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-    /* font-size: 2rem; */
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 p {
-    font-weight: 600;
-    color: #000000;
-    line-height: 1.6;
-    /* font-size: 1.2rem; */
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.6;
 }
 
 #texto-noticias p {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-/*turno online boton*/
+a, button, .especialidades img {
+  transition: all 0.3s ease;
+}
+
+.especialidades a:hover img {
+  transform: scale(1.05);
+}
+
+/* turno online boton */
 
 .turno-online {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 20px 0 0;
 }
 
 .turno-online p {
-    color: #134661;
-    margin: 0 0 0 0;
+  color: #134661;
+  margin: 0 0 0 0;
 }
 
 .turno-online h5 {
-    border-radius: 20px;
-    background: #134661;
-    display: flex;
-    width: 350px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
-    margin: 0px 0px 10px 0px
+  border-radius: 20px;
+  background: #134661;
+  display: flex;
+  width: 350px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 0px 0px 10px 0px;
 }
 
 /* header */
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 #sanatorio-juncal-logo {
-    margin: 30px 0 0 20px;
-}
-
-#header-turnos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-#header-turnos img/galeria/ {
-    margin: 30px 0px 0px 30px;
+  margin: 30px 0 0 20px;
 }
 
 nav {
-    width: 100%;
-    display: flex;
-    background-color: #319F5A;
-    padding: 15px 25px;
-    gap: 50px;
-    font-size: 1.2rem;
-    justify-content: flex-end;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  background-color: #319f5a;
+  padding: 15px 25px;
+  gap: 50px;
+  font-size: 1.2rem;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .nav-list {
-    display: flex;
-    gap: 100px;
-    list-style-type: none;
+  gap: 100px;
+  list-style-type: none;
 }
 
-/*main*/
+.nav-list span {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* main */
 
 #hero {
-    width: 100%;
-    margin: 16px auto;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
+  width: 100%;
+  margin: 16px auto;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
 }
 
 #hero ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    animation: slide 21s infinite ease-in-out;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  animation: slide 21s infinite ease-in-out;
 }
 
 #hero li {
-    width: 100%;
-    flex-shrink: 0;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 #hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @keyframes slide {
-    0% {
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
 
-    23% {
-        transform: translateX(0%);
-    }
+  23% {
+    transform: translateX(0%);
+  }
 
-    33% {
-        transform: translateX(-100%);
-    }
+  33% {
+    transform: translateX(-100%);
+  }
 
-    56% {
-        transform: translateX(-100%);
-    }
+  56% {
+    transform: translateX(-100%);
+  }
 
-    66% {
-        transform: translateX(-200%);
-    }
+  66% {
+    transform: translateX(-200%);
+  }
 
-    90% {
-        transform: translateX(-200%);
-    }
+  90% {
+    transform: translateX(-200%);
+  }
 
-    100% {
-        transform: translateX(0%);
-    }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .texto-hero {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-direction: column;
-    padding: 65px 51px;
-    box-sizing: border-box;
-
-    background: linear-gradient(to top,
-            rgba(0, 0, 0, 0.7) 0%,
-            rgba(0, 0, 0, 0.4) 40%,
-            rgba(0, 0, 0, 0) 80%)
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 65px 51px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 80%);
 }
-
 
 .texto-hero h2,
 .texto-hero p {
-    color: white;
-    margin-left: 5vh;
+  color: white;
+  margin-left: 5vh;
 }
 
 .texto-hero h2 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .texto-hero p {
-    font-size: 2rem;
-    margin-bottom: 3vh;
+  font-size: 2rem;
+  margin-bottom: 3vh;
 }
 
 #especialidades-medicas {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 25px;
 }
 
 #especialidades-medicas h1 {
-    font-size: 42px;
-    color: #134661;
-    margin: 0;
-    font-weight: 700;
-    padding: 0px 0px 0px 60px;
+  font-size: 42px;
+  color: #134661;
+  margin: 0;
+  font-weight: 700;
+  padding: 0px 0px 0px 60px;
 }
 
 .especialidades {
-    display: flex;
-    margin: 10px;
-    justify-content: space-evenly;
+  display: flex;
+  margin: 10px;
+  justify-content: space-evenly;
 }
 
 .especialidades article {
-    margin: auto;
+  margin: auto;
 }
 
 .especialidades img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 #especialidades-medicas article a {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-#especialidades-medicas article img/galeria/ {
-    width: 400px;
-    height: auto;
-    display: block;
-    border-radius: 20px;
+.texto-especialidades h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
-#texto-especialidades h2 {
-    color: #EAD7FB;
-    font-size: 1.5rem;
-    font-weight: 900;
+.texto-especialidades p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-#texto-especialidades p {
-    color: #EAD7FB;
-    font-size: 1rem;
-    font-weight: 600;
+.texto-especialidades {
+  background-color: #319f5a;
+  width: 371px;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px 30px;
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.6s ease;
 }
 
-#texto-especialidades {
-    background-color: #319F5A;
-    width: 371px;
-    height: auto;
-    border-radius: 20px;
-    padding: 20px 30px;
-    position: absolute;
-    bottom: 8px;
-    display: flex;
-    flex-direction: column;
-    opacity: 0;
-    transition: opacity 0.6s ease;
+#especialidades-medicas a:hover .texto-especialidades {
+  opacity: 1;
 }
 
-#especialidades-medicas a:hover #texto-especialidades {
-    opacity: 1;
+#especialidades-medicas a:hover > * {
+  transform: translateY(0px);
 }
 
-#especialidades-medicas a:hover>* {
-    transform: translateY(0px);
-}
+/* footer */
 
-
-/*footer*/
 footer {
-    background-color: #40A365;
-    display: flex;
-    padding: 40px;
-    justify-content: space-between;
-}
-
-footer p {
-    font-weight: 300;
-    color: #ffffff;
-    font-size: 1rem;
+  background-color: #40a365;
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
 }
 
 footer h6 {
-    font-size: 1.5rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin: 0 0 14px 0;
+}
+
+footer p,
+footer li {
+  font-size: 1.1rem;
+  color: #ffffff;
 }
 
 .institucional ul,
 .pacientes ul,
 .solicitudes ul {
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-    list-style-type: none
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  list-style-type: none;
 }
 
 .institucional,
 .pacientes,
 .solicitudes {
-    border-right: solid 3px #ffffff;
-    padding: 0px 30px 0px 0px;
+  border-right: solid 3px #ffffff;
+  padding: 0px 30px 0px 0px;
 }
 
 .contactos {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
 }
 
 .redes-sociales {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .redes-contacto {
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .menu-footer {
-    display: flex;
-    flex-direction: row;
-    gap: 75px;
+  display: flex;
+  flex-direction: row;
+  gap: 75px;
 }
 
-/*formulario de contacto*/
+/* formulario de contacto */
+
 .contact-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 30px;
 }
 
 .contact-form-container {
-    background-color: #fff;
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 900px;
-    box-sizing: border-box;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
 }
 
 .contact-form h2 {
-    color: #1a3b4c;
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    text-align: left;
+  color: #1a3b4c;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 10px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    width: 100%;
-    box-sizing: border-box;
-    resize: none;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
 }
 
 .contact-form-footer {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .contact-form-checkbox {
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #555;
-    white-space: nowrap;
-    margin-left: 2px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  white-space: nowrap;
+  margin-left: 2px;
 }
 
 .contact-form-buttons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .contact-form .btn {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .contact-form .reset {
-    background-color: #e0e0e0;
-    color: #555;
+  background-color: #e0e0e0;
+  color: #555;
 }
 
 .contact-form .reset:hover {
-    background-color: #d5d5d5;
+  background-color: #d5d5d5;
 }
 
 .contact-form .submit {
-    background-color: #4caf50;
-    color: white;
+  background-color: #4caf50;
+  color: white;
 }
 
 .contact-form .submit:hover {
-    background-color: #43a047;
+  background-color: #43a047;
 }
 
-/*ubicacion*/
+/* ubicacion */
+
 .ubicacion-sanatorio {
-    text-align: center;
-    padding: 30px;
-    max-width: 900px;
-    width: 100%;
+  text-align: center;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
 }
 
 .titulo-azul {
-    color: #1a3b4c;
-    font-size: 30px;
-    text-align: center;
+  color: #1a3b4c;
+  font-size: 30px;
+  text-align: center;
 }
 
 .boton-ver-sede {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px;
-    margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  margin: 20px;
 }
 
 .boton-ver-sede .btn {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .boton-ver-sede .reset:hover {
-    background-color: #d5d5d5;
+  background-color: #d5d5d5;
 }
 
 .boton-ver-sede .submit {
-    background-color: #1a3b4c;
-    color: white;
+  background-color: #1a3b4c;
+  color: white;
 }
 
-/*horarios*/
+/* horarios */
+
 main.horarios {
-    font-family: inter;
-    padding: 2rem;
+  font-family: inter;
+  padding: 2rem;
 }
 
 .horarios-container {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .titulo-horarios {
-    color: #1a3b4c;
-    display: inline-block;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.5px;
+  color: #1a3b4c;
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
 }
 
 .horarios-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .columna {
-    flex: 1;
-    min-width: 230px;
+  flex: 1;
+  min-width: 230px;
 }
 
 .subtitulo {
-    color: #1a3b4c;
-    font-size: 19px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 0.8rem;
+  color: #1a3b4c;
+  font-size: 19px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
 }
 
 .categoria {
-    font-weight: 900;
-    color: #1a1a1a;
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
 }
-
 
 /* galeria */
 
 #galeria {
-    display: flex;
-    gap: 32px;
-    flex-direction: column;
-    margin: 60px;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  margin: 60px;
 }
 
 #miniaturas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #galeria-ampliada {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    overflow: hidden;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
 }
 
 #galeria-oculta {
-    display: flex;
-    width: 100%;
-    max-width: 1450px;
-    overflow: hidden;
-    z-index: 20;
+  display: flex;
+  width: 100%;
+  max-width: 1450px;
+  overflow: hidden;
+  z-index: 20;
 }
 
 .fraccion-galeria {
-    display: flex;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    min-width: 1450px;
-    height: 100vh;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  min-width: 1450px;
+  height: 100vh;
+  justify-content: space-between;
 }
 
 .primer-ultima-flecha {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 2%;
+  position: absolute;
+  top: 10px;
+  right: 2%;
 }
 
-/*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
+/* IDS CON LAS IMÁGENES DE LA GALERÍA */
 
 #foto-1 {
-    background-image: url("img/galeria/galeria-1.jpg");
+  background-image: url("img/galeria/galeria-1.jpg");
 }
 
 #foto-2 {
-    background-image: url("img/galeria/galeria-2.jpg")
+  background-image: url("img/galeria/galeria-2.jpg");
 }
 
 #foto-3 {
-    background-image: url("img/galeria/galeria-3.jpg");
+  background-image: url("img/galeria/galeria-3.jpg");
 }
 
 #foto-4 {
-    background-image: url("img/galeria/galeria-4.jpg");
+  background-image: url("img/galeria/galeria-4.jpg");
 }
 
 #foto-5 {
-    background-image: url("img/galeria/galeria-5.jpg")
+  background-image: url("img/galeria/galeria-5.jpg");
 }
 
 #foto-6 {
-    background-image: url("img/galeria/galeria-6.jpg");
+  background-image: url("img/galeria/galeria-6.jpg");
 }
 
 #foto-7 {
-    background-image: url("img/galeria/galeria-7.jpg");
+  background-image: url("img/galeria/galeria-7.jpg");
 }
 
 #foto-8 {
-    background-image: url("img/galeria/galeria-8.jpg")
+  background-image: url("img/galeria/galeria-8.jpg");
 }
 
-/*RESPONSIVE*/
-
-@media (max-width: 500px) {
-
-    /*header*/
-    .turno-online {
-        display: none;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center
-    }
-
-    #header-turnos img {
-        width: 70%;
-        margin: 20px 0 0 50px;
-    }
-
-    .label-menu-hamburguesa {
-        color: #319F5A;
-        border: none;
-        padding: 10px 15px;
-        font-size: 48px;
-    }
-
-    #menu-hamburguesa {
-        display: none;
-    }
-
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        list-style: none;
-        background-color: #319F5A;
-        padding: 20px 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    #menu-hamburguesa:checked~.nav-list {
-        display: flex;
-    }
-
-    /*formulario de contacto*/
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 20px;
-        padding: 16px;
-    }
-
-    .contact-form-container {
-        padding: 20px;
-    }
-
-    .contact-form h2 {
-        text-align: left;
-        font-size: 2rem;
-    }
-
-    .contact-form-footer {
-        flex-direction: column;
-        align-items: left;
-        gap: 40px;
-    }
-
-    .contact-form-buttons {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .contact-form .btn,
-    .boton-ver-sede .btn {
-        padding: 14px 28px;
-        font-size: 18px;
-        border-radius: 10px;
-    }
-
-    .contact-form-checkbox {
-        font-size: 18px;
-        font-weight: 300;
-    }
-
-    .contact-form-checkbox input[type="checkbox"] {
-        width: 20px;
-        height: 20px;
-    }
-
-    /*ubicacion sanatorio*/
-
-    .ubicacion-sanatorio {
-        padding: 0px;
-        margin: 0px;
-        display: flex;
-    }
-
-    /*horarios*/
-
-    .columna h3 {
-        border-bottom: 1px solid #1a3b4c;
-        width: 70%;
-        padding-bottom: 8px;
-        font-size: 1.2rem;
-    }
-
-    /*footer*/
-
-    footer {
-        flex-direction: column;
-        padding: 40px 40px 80px 40px;
-        gap: 60px;
-    }
-
-    .menu-footer {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .menu-footer a {
-        margin: 0 auto;
-    }
-
-    .menu-footer a img {
-        width: 200px;
-        margin: 0 auto;
-    }
-
-    .institucional,
-    .pacientes,
-    .solicitudes {
-        border: none;
-        padding: 0;
-    }
-
-    .institucional ul,
-    .pacientes ul,
-    .solicitudes ul {
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .redes-contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 40px;
-    }
-
-    .redes-sociales {
-        gap: 34px;
-    }
-
-    .redes-sociales img {
-        width: 48px;
-        height: 48px;
-    }
-
-    .contactos {
-        align-items: flex-start;
-        gap: 6px;
-    }
-
-    footer p {
-        font-size: 1.2rem;
-    }
-
-    footer h6 {
-        font-size: 1.5rem;
-    }
-}
-
-/*responsive blocks header*/
-
-@media (min-width: 501px) {
-
-    #menu-hamburguesa,
-    .label-menu-hamburguesa {
-        display: none !important;
-    }
-
-    nav {
-        display: flex !important;
-    }
-}
-
-@media (max-width: 800px) {
-    .horarios-columns {
-        flex-direction: column;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CCS institucional Facu */
+/* CSS institucional */
 
 .texto-gestion-calidad {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .texto-gestion p {
-    /* font-size: 30px;
-    margin: 10px;
-    font-weight: 400; */
-    font-size: 1.5rem;
-    max-width: 75vh;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 40px;
+  font-size: 1.5rem;
+  max-width: 75vh;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 40px;
 }
 
 .texto-gestion img {
-    border-radius: 10%;
+  border-radius: 10%;
 }
 
 .texto-gestion {
-    /* display: flex;
-    align-items: flex-start;
-    gap: 50px; */
-    display: flex;
-    gap: 50px;
-    justify-content: center;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
 }
 
 #gestion-de-calidad h3 {
-    font-size: 42px;
-    color: #134661;
-    margin: 0;
-    font-weight: 700;
+  font-size: 42px;
+  color: #134661;
+  margin: 0;
+  font-weight: 700;
 }
 
 #gestion-de-calidad {
-    display: flex;
-    gap: 32px;
-    flex-direction: column;
-    margin: 60px;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  margin: 60px;
 }
 
 .video-institucional {
-    border-radius: 40px;
+  border-radius: 40px;
 }
 
 .mision p,
 .vision p {
-    font-size: 20px;
-    margin: 0px;
-    font-weight: 400;
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 400;
 }
 
 .mision h4,
 .vision h4 {
-    font-size: 28px;
-    color: #76A9D7;
-    margin: 0;
-    font-weight: 700;
+  font-size: 28px;
+  color: #76a9d7;
+  margin: 0;
+  font-weight: 700;
 }
 
 .mision,
 .vision {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 650px;
-    height: 260px;
-    border: solid 3px #134661;
-    border-radius: 100px;
-    padding: 40px 40px 40px 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 650px;
+  height: 260px;
+  border: solid 3px #134661;
+  border-radius: 100px;
+  padding: 40px 40px 40px 45px;
 }
 
 #mision-vision {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px;
 }
 
 .icono-residencias,
 .icono-turno,
 .icono-cardiovascular,
 .icono-clinico {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 #iconos p {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px;
 }
 
 #iconos {
-    display: flex;
-    flex-direction: row;
-    background-color: #76A9D7;
-    justify-content: center;
-    gap: 45px;
-    padding: 25px;
+  display: flex;
+  flex-direction: row;
+  background-color: #76a9d7;
+  justify-content: center;
+  gap: 45px;
+  padding: 25px;
 }
 
 #galeria h3 {
-    font-size: 42px;
-    color: #134661;
-    margin: 0;
-    font-weight: 700;
+  font-size: 42px;
+  color: #134661;
+  margin: 0;
+  font-weight: 700;
 }
 
-/* Noticias Index*/
+/* Noticias Index */
 
 .texto-noticias {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 1030px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 1030px;
 }
 
 .texto-noticias p {
-    font-size: 1.3rem;
-    color: #ffffff;
-    margin: 0;
-    font-weight: 400;
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 400;
 }
 
 .texto-noticias h3 {
-    font-size: 42px;
-    color: #ffffff;
-    margin: 0;
-    font-weight: 700;
+  font-size: 42px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
 }
 
 .texto-noticias h6 {
-    font-size: 1.3rem;
-    color: #ffffff;
-    margin: 0;
-    font-weight: 700;
-}
-
-#noticias img{
-    border-radius: 50px;
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
 }
 
 #noticias {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 80px;
-    background-color: #76A9D7;
-    height: 550px;
-    align-items: center;
-    padding: 40px;
-    margin: 30px 0px 0px 0px;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 80px;
+  background-color: #76a9d7;
+  height: 550px;
+  align-items: center;
+  padding: 40px;
+  margin: 30px 0px 0px 0px;
+  justify-content: space-evenly;
 }
 
-#noticias img/galeria/ {
-    border-radius: 60px;
+#noticias img {
+  border-radius: 60px;
 }
 
+/* BLOQUEO DE MENU HAMBURGUESA DEL DESKTOP */
 
+@media (min-width: 501px) {
+  #menu-hamburguesa,
+  .label-menu-hamburguesa {
+    display: none !important;
+  }
 
+  .nav-list {
+    display: flex !important;
+  }
+}
 
-
-
-
-
-/*RESPONSIVE*/
+/* RESPONSIVE */
 
 @media (max-width: 500px) {
+  /* header */
 
-    /*header*/
-
-    .turno-online {
-        display: none;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center
-    }
-
-    #header-turnos img {
-    width: 70%;
-    margin: 20px 0 0 50px;
-    }
-
-    .label-menu-hamburguesa {
-        color: #319F5A;
-        border: none;
-        padding: 10px 15px;
-        font-size: 48px;
-    }
-
-    #menu-hamburguesa {
+  .turno-online {
     display: none;
-    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sanatorio-juncal-logo {
+    margin: 40px 0px 0px 0px;
+  }
+
+  .label-menu-hamburguesa {
+    color: #319f5a;
+    padding: 10px 15px;
+  }
+
+  #menu-hamburguesa {
+    display: none;
+  }
 
   .nav-list {
     display: none;
@@ -1229,156 +819,170 @@ main.horarios {
     align-items: center;
     gap: 50px;
     list-style: none;
-    background-color: #319F5A;
+    background-color: #319f5a;
     padding: 20px 0;
     margin: 0;
     width: 100%;
   }
 
-    #menu-hamburguesa:checked ~ .nav-list {
+  #menu-hamburguesa:checked ~ .nav-list {
     display: flex;
-    }
+  }
 
-    /*formulario de contacto*/
+  /* formulario de contacto */
 
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 20px;
-        padding: 16px 18px;
-    }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
 
-    .contact-form-container {
-        padding: 20px;
-    }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 20px;
+    padding: 16px 18px;
+  }
 
-    .contact-form h2 {
-        text-align: center;
-        font-size: 2rem;
-    }
+  .contact-form-container {
+    padding: 20px;
+  }
 
-    .contact-form-footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
+  .contact-form h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
 
-    .contact-form-buttons {
-        flex-direction: row;
-        gap: 40px;
-    }
+  .contact-form-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 
-    .contact-form .btn,
-    .boton-ver-sede .btn {
-        padding: 14px 28px;
-        font-size: 18px;
-        border-radius: 10px;
-    }
+  .contact-form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+  }
 
-    .contact-form-checkbox {
-        font-size: 18px;
-        font-weight: 600;
-    }
+  .contact-form .btn,
+  .boton-ver-sede .btn {
+    padding: 14px 28px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
 
-    .contact-form-checkbox input[type="checkbox"] {
+  .contact-form-checkbox {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .contact-form-checkbox input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    }
+  }
 
-    /*ubicacion sanatorio*/
+  /* ubicacion sanatorio */
 
-    .ubicacion-sanatorio {
-        padding: 0px;
-        margin: 0px;
-        display: flex;
-    }
+  .ubicacion-sanatorio {
+    padding: 0px;
+    margin: 80px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /*horarios*/
+  .ubicacion-sanatorio iframe {
+    width: 100%;
+  }
 
-    .columna h3 {
-        border-bottom: 1px solid #1a3b4c;
-        width: 70%;
-        padding-bottom: 8px;
-        font-size: 1.2rem;
-    }
+  /* horarios */
 
-    /*main contact*/
+  .columna h3 {
+    border-bottom: 1px solid #1a3b4c;
+    width: 70%;
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+  }
 
-    contact-form {
-    padding: 60px 30px;
-    }
+  /* index */
 
-    /*index*/
+  main {
+    padding: 0;
+  }
 
-    #hero {
-        width: 300%;
-        display: flex;
+  #hero {
+    width: 300%;
+    display: flex;
+  }
 
-    }
+  .texto-hero {
+    padding: 20px 20px 40px 0px;
+  }
 
-    .texto-hero h2 {
+  .texto-hero h2 {
     width: 30%;
     font-size: 2.5rem;
-    }
+  }
 
-    .texto-hero p {
-    width: 30%;
+  .texto-hero p {
     font-size: 1.3rem;
-    }
+  }
 
-    /*especialidades médicas*/
+  /* especialidades médicas */
 
-    #especialidades-medicas h1 {
+  #especialidades-medicas h1 {
     font-size: 2rem;
     padding: 0;
     text-align: center;
-     }
+  }
 
-    .especialidades {
+  .especialidades {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    }
+  }
 
   #especialidades-medicas article a {
     flex-direction: column;
-    }
+  }
 
   #especialidades-medicas article img {
     width: 100%;
     height: auto;
     border-radius: 16px;
-    }
+  }
 
-  #texto-especialidades {
+  .texto-especialidades {
     position: static;
     opacity: 1;
     width: 100%;
-    background-color: #319F5A;
+    background-color: #319f5a;
     margin-top: 10px;
-    }
+  }
 
-  #texto-especialidades h2 {
+  .texto-especialidades h2 {
     text-align: center;
     margin: 0 0 10px 0;
     color: white;
-    }
+  }
 
-  #texto-especialidades p {
+  .texto-especialidades p {
     font-size: 1.4rem;
     text-align: center;
     color: white;
-    }
+  }
 
-    /*noticias*/
+  /* noticias */
 
-    #noticias {
+  #noticias {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     gap: 40px;
     height: auto;
-    background-color: #76A9D7;
+    background-color: #76a9d7;
   }
 
   #noticias img {
@@ -1396,87 +1000,70 @@ main.horarios {
     font-size: 1.4rem;
   }
 
-/*FOOTER*/
+  /* FOOTER */
 
-    footer {
+  footer {
+    display: flex;
     flex-direction: column;
     padding: 40px 40px 80px 40px;
     gap: 60px;
-    }
+    width: 100%;
+  }
 
-    .menu-footer {
+  .menu-footer {
     flex-direction: column;
     gap: 40px;
-    }
+  }
 
-    .menu-footer a {
+  .menu-footer a {
     margin: 0 auto;
-    }
+  }
 
-    .menu-footer a img {
+  .menu-footer a img {
     width: 200px;
     margin: 0 auto;
-    }
+  }
 
-    .institucional,
-    .pacientes,
-    .solicitudes {
+  .institucional,
+  .pacientes,
+  .solicitudes {
     border: none;
     padding: 0;
-    }
+  }
 
-    .institucional ul,
-    .pacientes ul,
-    .solicitudes ul {
+  .institucional ul,
+  .pacientes ul,
+  .solicitudes ul {
     align-items: flex-start;
     gap: 10px;
-    }
+  }
 
-    .redes-contacto {
+  .redes-contacto {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    }
+  }
 
-    .redes-sociales {
+  .redes-sociales {
     gap: 34px;
-    }
+  }
 
-    .redes-sociales img {
+  .redes-sociales img {
     width: 48px;
-     height: 48px;
-    }
+    height: 48px;
+  }
 
-    .contactos {
-     align-items: flex-start;
+  .contactos {
+    align-items: flex-start;
     gap: 6px;
-    }
+  }
 
-    footer p {
-     font-size: 1.2rem;
-    }
+  footer p {
+    font-size: 1.2rem;
+  }
 
-    footer h6 {
-     font-size: 1.5rem;
-    }
-}
-
-/*responsive blocks header*/
-
-    @media (min-width: 501px) {
-    #menu-hamburguesa,
-    .label-menu-hamburguesa {
-    display: none !important;
-    }
-
-    nav {
-    display: flex !important;
-    }
-}
-
-@media (max-width: 800px) {
-    .horarios-columns {
-        flex-direction: column;
-    }
+  footer h6 {
+    font-size: 1.5rem;
+  }
 }

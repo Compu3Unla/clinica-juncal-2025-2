@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,33 +10,34 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-        <link rel="icon" href="svg/logo/favicon-juncal.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="svg/logo/favicon-juncal.svg" type="image/svg+xml">
 </head>
 
 <body>
     <header>
-        <section id="header-turnos">
-            <a href="index.html">
-                <img id="sanatorio-juncal-logo" src="svg/logo/logo-sanatorio-juncal.svg" alt="Sanatorio Juncal Logotipo" width="250" height="71"></a>
-            <article class="turno-online">
-                <h5>SOLICITAR TURNOS ONLINE</h5>
-                <p>TURNOS 4239-8008 - CONMUTADOR 4239-8000 </p>
-            </article>
-        </section>
-         <input type="checkbox" id="menu-hamburguesa">
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <img id="sanatorio-juncal-logo" src="svg/logo/logo-sanatorio-juncal.svg" alt="Sanatorio Juncal Logotipo" width="250" height="71">
+            </a>
 
+            <div class="turno-online">
+                <h5>SOLICITAR TURNOS ONLINE</h5>
+                <p>TURNOS 4239-8008 - CONMUTADOR 4239-8000</p>
+            </div>
+        </div>
+
+        <input type="checkbox" id="menu-hamburguesa">
         <label for="menu-hamburguesa" class="label-menu-hamburguesa">
-             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="list-icon" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-             </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="list-icon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
         </label>
+
         <nav class="nav-list">
             <a href="institucional.html">Institucional</a>
-            <a href="#">Pacientes</a>
-            <a href="#">Solicitudes</a>
+            <span>Pacientes</span>
+            <span>Solicitudes</span>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
@@ -46,30 +47,29 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="img/hero/juncal-hero-1.jpg" width="1028" height="508"
-                            alt="cartilla profesionales solicitar turno">
-                        <section class="texto-hero">
+                        <img src="img/hero/juncal-hero-1.jpg" width="1028" height="508" alt="cartilla profesionales solicitar turno">
+                        <article class="texto-hero">
                             <h2>Conocé nuestra cartilla de profesionales</h2>
                             <p>y solicitá tu turno</p>
-                        </section>
+                        </article>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="img/hero/juncal-hero-2.jpg" width="1080" height="400" alt="ubicación Sanatorio Juncal">
-                        <section class="texto-hero">
+                        <article class="texto-hero">
                             <h2>Conocé donde estamos ubicados</h2>
                             <p>y cómo llegar</p>
-                        </section>
+                        </article>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="img/hero/juncal-hero-3.jpg" width="1028" height="508" alt="instalaciones y servicios">
-                        <section class="texto-hero">
+                        <article class="texto-hero">
                             <h2>Conocé nuestras instalaciones</h2>
                             <p>y nuestros servicios</p>
-                        </section>
+                        </article>
                     </a>
                 </li>
             </ul>
@@ -80,12 +80,10 @@
             <div class="especialidades">
                 <article class="cardiologia-pediatrica">
                     <a href="#">
-                        <img src="img/especialidades/cardiologia-pediatrica-img.jpg" alt="Foto Cardiologia Pediatrica" width="400"
-                            height="595">
-                        <div id="texto-especialidades">
-                            <h2>Cardiologia Pediatrica</h2>
-                            <p>Hoy en día es posible corregir la mayoría de las cardiopatías congénitas durante los
-                                primeros meses de vida, lo que permite que...</p>
+                        <img src="img/especialidades/cardiologia-pediatrica-img.jpg" alt="Foto Cardiologia Pediatrica" width="400" height="595">
+                        <div class="texto-especialidades">
+                            <h2>Cardiología Pediátrica</h2>
+                            <p>Hoy en día es posible corregir la mayoría de las cardiopatías congénitas durante los primeros meses de vida, lo que permite que...</p>
                         </div>
                     </a>
                 </article>
@@ -93,33 +91,29 @@
                 <article class="radiologia">
                     <a href="#">
                         <img src="img/especialidades/radiologia-img.jpg" alt="Foto Radiologia" width="400" height="595">
-                        <div id="texto-especialidades">
-                            <h2>Radiologia</h2>
-                            <p>El Servicio de Radiología brinda soporte a casi todas las áreas médicas de la
-                                institución, con
-                                especial énfasis... </p>
+                        <div class="texto-especialidades">
+                            <h2>Radiología</h2>
+                            <p>El Servicio de Radiología brinda soporte a casi todas las áreas médicas de la institución, con especial énfasis... </p>
                         </div>
                     </a>
                 </article>
 
                 <article class="neurologia">
-                    <a href="#"><img src="img/especialidades/neurologia-img.jpg" alt="foto de neurologia" width="400" height="595">
-                        <div id="texto-especialidades">
-                            <h2>Neurologia</h2>
-                            <p>El Servicio de Neurología está conformado por neurólogos de amplia trayectoria y
-                                reconocida
-                                experiencia, dedicados al... </p>
+                    <a href="#">
+                        <img src="img/especialidades/neurologia-img.jpg" alt="foto de neurologia" width="400" height="595">
+                        <div class="texto-especialidades">
+                            <h2>Neurología</h2>
+                            <p>El Servicio de Neurología está conformado por neurólogos de amplia trayectoria y reconocida experiencia, dedicados al... </p>
                         </div>
                     </a>
                 </article>
 
                 <article class="cardiologia">
-                    <a href="#"> <img src="img/especialidades/cardiologia-img.jpg" alt="Foto Cardiologia" width="400" height="595">
-                        <div id="texto-especialidades">
-                            <h2>Cardiologia</h2>
-                            <p>El Servicio de Cardiología está especializado en la prevención, diagnóstico y tratamiento
-                                de las
-                                enfermedades cardiovasculares en adultos...</p>
+                    <a href="#">
+                        <img src="img/especialidades/cardiologia-img.jpg" alt="Foto Cardiologia" width="400" height="595">
+                        <div class="texto-especialidades">
+                            <h2>Cardiología</h2>
+                            <p>El Servicio de Cardiología está especializado en la prevención, diagnóstico y tratamiento de las enfermedades cardiovasculares en adultos...</p>
                         </div>
                     </a>
                 </article>
@@ -130,86 +124,64 @@
             <img src="img/noticias-endoscopia.jpg" alt="Foto de endoscopio" width="630" height="420">
             <article class="texto-noticias">
                 <h3>Noticias</h3>
-                <p>En Sanatorio Juncal incorporamos nuevos equipos de video-endoscopia de última generación, con
-                    magnificación x100 en alta definición (HD) y tecnología FICE.
-                    Estos avances permiten la detección temprana de lesiones antes de que se vuelvan cancerígenas,
-                    ofreciendo estudios de la más alta calidad médico-técnica.
-                    Además, los procedimientos se realizan en un quirófano de última generación, especialmente diseñado
-                    para este tipo de estudios, junto a salas de recuperación privadas que garantizan el máximo confort
-                    para los pacientes. </p>
-                <h6>Ver mas</h6>
+                <p>En Sanatorio Juncal incorporamos nuevos equipos de video-endoscopia de última generación, con magnificación x100 en alta definición (HD) y tecnología FICE. Estos avances permiten la detección temprana de lesiones antes de que se vuelvan cancerígenas, ofreciendo estudios de la más alta calidad médico-técnica. Además, los procedimientos se realizan en un quirófano de última generación, especialmente diseñado para este tipo de estudios, junto a salas de recuperación privadas que garantizan el máximo confort para los pacientes. </p>
+                <h6>Ver más...</h6>
             </article>
         </section>
     </main>
 
     <footer>
         <div class="menu-footer">
-            <a href="#">
+            <a href="index.html">
                 <img src="svg/logo/logo-juncal-blanco.svg" width="150" height="59" alt="Sanatorio Juncal logotipo">
             </a>
-            <div class="institucional">
+
+            <section class="institucional">
+                <h6><a href="institucional.html">Institucional</a></h6>
                 <ul>
-                    <li>
-                        <h6>Institucional</h6>
-                    </li>
-                    <li>
-                        <p>Instalaciones</p>
-                    </li>
-                    <li>
-                        <p>RRHH</p>
-                    </li>
+                    <li>Instalaciones</li>
+                    <li>RRHH</li>
                 </ul>
-            </div>
-            <div class="pacientes">
+            </section>
+
+            <section class="pacientes">
+                <h6>Pacientes</h6>
                 <ul>
-                    <li>
-                        <h6>Pacientes</h6>
-                    </li>
-                    <li>
-                        <p>Turnos</p>
-                    </li>
-                    <li>
-                        <p>Especialidades Medicas</p>
-                    </li>
+                    <li>Turnos</li>
+                    <li>Especialidades Médicas</li>
                 </ul>
-            </div>
-            <div class="solicitudes">
+            </section>
+
+            <section class="solicitudes">
+                <h6>Solicitudes</h6>
                 <ul>
-                    <li>
-                        <h6>Solicitudes</h6>
-                    </li>
-                    <li>
-                        <p>Solicitud de Historial</p>
-                    </li>
-                    <li>
-                        <p>Solicitud de Resultados</p>
-                    </li>
-                    <li>
-                        <p>Preparacion para estudios</p>
-                    </li>
-                    <li>
-                        <p>Consentimientos</p>
-                    </li>
-                    <li>
-                        <p>informados </p>
-                    </li>
+                    <li>Solicitud de Historial</li>
+                    <li>Solicitud de Resultados</li>
+                    <li>Preparación para estudios</li>
+                    <li>Consentimientos informados</li>
                 </ul>
-            </div>
+            </section>
         </div>
+
         <div class="redes-contacto">
             <div class="redes-sociales">
-                <a href="https://www.instagram.com/residenciasanatoriojuncal/" target="_blank"><img
-                        src="svg/redes sociales/ri_instagram-fill.svg" width="38" height="38" alt="foto de instalagram"></a>
-                <a href="https://www.facebook.com/profile.php?id=61560966554230" target="_blank"><img
-                        src="svg/redes sociales/facebook-icon.svg" width="38" height="38" alt="foto de facebook"></a>
-                <a href="https://www.linkedin.com/company/sanatorio-juncal/" target="_blank"><img
-                        src="svg/redes sociales/linkedin-icon.svg" width="38" height="38" alt="foto de linkedin"></a>
-                <a href="https://www.youtube.com/@sanatoriojuncals.a.9195" target="_blank"><img
-                        src="svg/redes sociales/youtube-icon.svg" width="38" height="38" alt="foto de youtube"></a>
+                <a href="https://www.instagram.com/residenciasanatoriojuncal/" target="_blank">
+                    <img src="svg/redes sociales/ri_instagram-fill.svg" width="38" height="38" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61560966554230" target="_blank">
+                    <img src="svg/redes sociales/facebook-icon.svg" width="38" height="38" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/sanatorio-juncal/" target="_blank">
+                    <img src="svg/redes sociales/linkedin-icon.svg" width="38" height="38" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/@sanatoriojuncals.a.9195" target="_blank">
+                    <img src="svg/redes sociales/youtube-icon.svg" width="38" height="38" alt="YouTube">
+                </a>
             </div>
+
             <div class="contactos">
-                <h6>Contactos</h6>
-                <p>telefono y horarios</p>
+                <h6><a href="contacto.html">Contacto</a></h6>
+                <p>Teléfono y horarios</p>
                 <p>Lunes a Viernes - 08:00hs a 19:00hs</p>
                 <p>WhatsApp - 11234353 / 4239-8000</p>
             </div>
@@ -217,3 +189,5 @@
     </footer>
 
 </body>
+
+</html>
