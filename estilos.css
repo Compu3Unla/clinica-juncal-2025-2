@@ -479,6 +479,11 @@ footer li {
 
 /* horarios */
 
+main.horarios {
+  font-family: inter;
+  padding: 2rem;
+}
+
 .horarios-container {
   background: #fff;
   padding: 2rem;
@@ -684,9 +689,9 @@ footer li {
   flex-direction: column;
   gap: 10px;
   width: 650px;
-  height: 280px;
+  height: 260px;
   border: solid 3px #134661;
-  border-radius: 90px;
+  border-radius: 100px;
   padding: 40px 40px 40px 45px;
 }
 
