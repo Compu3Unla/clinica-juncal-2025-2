@@ -64,7 +64,6 @@ a, button, .especialidades img {
 }
 
 /* turno online boton */
-
 .turno-online {
   display: flex;
   flex-direction: column;
@@ -90,7 +89,6 @@ a, button, .especialidades img {
 }
 
 /* header */
-
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -124,7 +122,6 @@ nav {
 }
 
 /* main */
-
 #hero {
   width: 100%;
   margin: 16px auto;
@@ -479,6 +476,11 @@ footer li {
 
 /* horarios */
 
+main.horarios {
+  font-family: inter;
+  padding: 2rem;
+}
+
 .horarios-container {
   background: #fff;
   padding: 2rem;
@@ -686,7 +688,7 @@ footer li {
   width: 650px;
   height: 270px;
   border: solid 3px #134661;
-  border-radius: 90px;
+  border-radius: 100px;
   padding: 40px 40px 40px 45px;
 }
 
@@ -775,20 +777,7 @@ footer li {
   border-radius: 60px;
 }
 
-/* BLOQUEO DE MENU HAMBURGUESA DEL DESKTOP */
-
-@media (min-width: 501px) {
-  #menu-hamburguesa,
-  .label-menu-hamburguesa {
-    display: none !important;
-  }
-
-  .nav-list {
-    display: flex !important;
-  }
-}
-
-/* RESPONSIVE */
+/*RESPONSIVE*/
 
 @media (max-width: 500px) {
   /* header */
