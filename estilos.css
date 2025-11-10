@@ -775,20 +775,7 @@ footer li {
   border-radius: 60px;
 }
 
-/* BLOQUEO DE MENU HAMBURGUESA DEL DESKTOP */
-
-@media (min-width: 501px) {
-  #menu-hamburguesa,
-  .label-menu-hamburguesa {
-    display: none !important;
-  }
-
-  .nav-list {
-    display: flex !important;
-  }
-}
-
-/* RESPONSIVE */
+/*RESPONSIVE*/
 
 @media (max-width: 500px) {
   /* header */
