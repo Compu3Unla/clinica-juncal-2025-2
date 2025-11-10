@@ -64,7 +64,6 @@ a, button, .especialidades img {
 }
 
 /* turno online boton */
-
 .turno-online {
   display: flex;
   flex-direction: column;
@@ -90,7 +89,6 @@ a, button, .especialidades img {
 }
 
 /* header */
-
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -124,7 +122,6 @@ nav {
 }
 
 /* main */
-
 #hero {
   width: 100%;
   margin: 16px auto;
