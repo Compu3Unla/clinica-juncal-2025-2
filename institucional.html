@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Grupo 5">
-    <meta name="keywords" content="">
-    <title> Sanatorio Juncal</title>
+    <meta name="keywords" content="Sanatorio, Juncal, Gestion, Tratamiento, Mision, Vision, Galeria ">
+    <title>Institucional - Sanatorio Juncal</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <script>
         function cambiarDisplay(visibilidadNueva) {
@@ -41,14 +41,15 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="list-icon"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    d="M2.5 12a.5.5 0 0 
+                    1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
             </svg>
         </label>
 
         <nav class="nav-list">
             <a href="institucional.html">Institucional</a>
-            <a href="#">Pacientes</a>
-            <a href="#">Solicitudes</a>
+            <a class="deshabilitado">Pacientes</a>
+            <a class="deshabilitado">Solicitudes</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
@@ -115,7 +116,7 @@
         <section id="galeria">
             <h3>GALERÍA</h3>
             <article id="miniaturas">
-                <div id="miniatura-1">
+                <div class="miniatura-1">
                     <a href="#foto-1"><img src="img/galeria/galeria-1.jpg" width="300px" height="180px" alt="Gorrión"
                             onClick="mostrarGaleria()"></a>
                     <a href="#foto-2"><img src="img/galeria/galeria-2.jpg" width="300px" height="180px" alt="Lechuza"
@@ -125,7 +126,7 @@
                     <a href="#foto-4"><img src="img/galeria/galeria-4.jpg" width="300px" height="180px" alt="Teyú"
                             onClick="mostrarGaleria()"></a>
                 </div>
-                <div id="miniatura-2">
+                <div class="miniatura-2">
                     <a href="#foto-5"><img src="img/galeria/galeria-5.jpg" width="300px" height="180px" alt="Teyú"
                             onClick="mostrarGaleria()"></a>
                     <a href="#foto-6"><img src="img/galeria/galeria-6.jpg" width="300px" height="180px" alt="Teyú"
@@ -240,82 +241,58 @@
             <a href="index.html">
                 <img src="svg/logo/logo-juncal-blanco.svg" width="150" height="59" alt="Sanatorio Juncal logotipo">
             </a>
-            <div class="institucional">
-                <ul>
-                    <li>
-                        <h6>
-                            <a href="institucional.html">Institucional</a>
-                        </h6>
-                    </li>
-                    <li>
-                        <p>Instalaciones</p>
-                    </li>
-                    <li>
-                        <p>RRHH</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="pacientes">
-                <ul>
-                    <li>
-                        <h6>
-                            <a href="#">Pacientes</a>
 
-                            </h6>
-                    </li>
-                    <li>
-                        <p>Turnos</p>
-                    </li>
-                    <li>
-                        <p>Especialidades Medicas</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="solicitudes">
+            <section class="institucional">
+                <h6><a href="institucional.html">Institucional</a></h6>
                 <ul>
-                    <li>
-                        <h6>
-                            <a href="#" >Solicitudes</a>
-                        </h6>
-                    </li>
-                    <li>
-                        <p>Solicitud de Historial</p>
-                    </li>
-                    <li>
-                        <p>Solicitud de Resultados</p>
-                    </li>
-                    <li>
-                        <p>Preparacion para estudios</p>
-                    </li>
-                    <li>
-                        <p>Consentimientos</p>
-                    </li>
-                    <li>
-                        <p>informados </p>
-                    </li>
+                    <li>Instalaciones</li>
+                    <li>RRHH</li>
                 </ul>
-            </div>
+            </section>
+
+            <section class="pacientes">
+                <h6>Pacientes</h6>
+                <ul>
+                    <li>Turnos</li>
+                    <li>Especialidades Médicas</li>
+                </ul>
+            </section>
+
+            <section class="solicitudes">
+                <h6>Solicitudes</h6>
+                <ul>
+                    <li>Solicitud de Historial</li>
+                    <li>Solicitud de Resultados</li>
+                    <li>Preparación para estudios</li>
+                    <li>Consentimientos informados</li>
+                </ul>
+            </section>
         </div>
+
         <div class="redes-contacto">
             <div class="redes-sociales">
-                <a href="https://www.instagram.com/residenciasanatoriojuncal/" target="_blank"><img
-                        src="svg/redes sociales/ri_instagram-fill.svg" width="38" height="38"
-                        alt="foto de instalagram"></a>
-                <a href="https://www.facebook.com/profile.php?id=61560966554230" target="_blank"><img
-                        src="svg/redes sociales/facebook-icon.svg" width="38" height="38" alt="foto de facebook"></a>
-                <a href="https://www.linkedin.com/company/sanatorio-juncal/" target="_blank"><img
-                        src="svg/redes sociales/linkedin-icon.svg" width="38" height="38" alt="foto de linkedin"></a>
-                <a href="https://www.youtube.com/@sanatoriojuncals.a.9195" target="_blank"><img
-                        src="svg/redes sociales/youtube-icon.svg" width="38" height="38" alt="foto de youtube"></a>
+                <a href="https://www.instagram.com/residenciasanatoriojuncal/" target="_blank">
+                    <img src="svg/redes sociales/ri_instagram-fill.svg" width="38" height="38" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61560966554230" target="_blank">
+                    <img src="svg/redes sociales/facebook-icon.svg" width="38" height="38" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/sanatorio-juncal/" target="_blank">
+                    <img src="svg/redes sociales/linkedin-icon.svg" width="38" height="38" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/@sanatoriojuncals.a.9195" target="_blank">
+                    <img src="svg/redes sociales/youtube-icon.svg" width="38" height="38" alt="YouTube">
+                </a>
             </div>
+
             <div class="contactos">
-                <h6>Contactos</h6>
-                <p>telefono y horarios</p>
+                <h6><a href="contacto.html">Contacto</a></h6>
+                <p>Teléfono y horarios</p>
                 <p>Lunes a Viernes - 08:00hs a 19:00hs</p>
                 <p>WhatsApp - 11234353 / 4239-8000</p>
             </div>
         </div>
     </footer>
-
-
 </body>
+
+</html>
